@@ -1,9 +1,10 @@
 \documentclass[12pt, a4paper, openany]{report}
 \setcounter{secnumdepth}{0}
+
 % --- Cấu hình ngôn ngữ & Font ---
 \usepackage[english, vietnamese]{babel} 
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage[T5]{fontenc} % ĐÃ SỬA: T1 thành T5 để hỗ trợ tiếng Việt
 \usepackage{microtype} 
 \usepackage{graphicx}
 \usepackage{float}
@@ -14,20 +15,19 @@
 \usepackage{subcaption}
 \usepackage{placeins}
 \usepackage{caption}
-\usepackage{algorithm}
+% \usepackage{algorithm} % ĐÃ XÓA: Tránh xung đột với algorithm2e
 \usepackage[nottoc,notlof,notlot]{tocbibind}
-% --- CẤU HÌNH CĂN LỀ (Lề trái 3cm để đóng tập, các lề khác 2cm) ---
+
+% --- CẤU HÌNH CĂN LỀ ---
 \usepackage[left=3cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{tocloft}
-
 
 % --- Tùy chỉnh tiêu đề mục lục ---
 \renewcommand{\contentsname}{Mục lục}
 \renewcommand{\cftchappresnum}{Chương } 
 \renewcommand{\cftchapaftersnum}{:}
 \renewcommand{\cftchapnumwidth}{2.5cm}
-\setcounter{tocdepth}{3} % Cho phép mục lục hiển thị đến cấp subsubsection
-
+\setcounter{tocdepth}{3}
 
 % --- PACKAGES ---
 \usepackage{amsmath, amssymb}
@@ -49,10 +49,10 @@
 {\huge\bfseries\raggedright}
 \titlespacing*{\chapter}{0pt}{-20pt}{30pt}
 
-\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[ruled,vlined]{algorithm2e} % Giữ lại thư viện thuật toán này
 \SetKwProg{Fn}{Function}{}{end}
 \usepackage{chngcntr}
-\counterwithout{section}{chapter} % Loại bỏ sự phụ thuộc của section vào chapter
+\counterwithout{section}{chapter} 
 
 \begin{document}
 
