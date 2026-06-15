@@ -1,0 +1,234 @@
+\documentclass[12pt, a4paper, openany]{report}
+\setcounter{secnumdepth}{0}
+% --- Cấu hình ngôn ngữ & Font ---
+\usepackage[english, vietnamese]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18} 
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{caption}
+\usepackage{algorithm}
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+% --- CẤU HÌNH CĂN LỀ (Lề trái 3cm để đóng tập, các lề khác 2cm) ---
+\usepackage[left=3cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{tocloft}
+
+
+% --- Tùy chỉnh tiêu đề mục lục ---
+\renewcommand{\contentsname}{Mục lục}
+\renewcommand{\cftchappresnum}{Chương } 
+\renewcommand{\cftchapaftersnum}{:}
+\renewcommand{\cftchapnumwidth}{2.5cm}
+\setcounter{tocdepth}{3} % Cho phép mục lục hiển thị đến cấp subsubsection
+
+
+% --- PACKAGES ---
+\usepackage{amsmath, amssymb}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\onehalfspacing
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+% --- ĐỊNH NGHĨA LẠI GIAO DIỆN CHƯƠNG ---
+\titleformat{\chapter}[display]
+{\normalfont\Huge\bfseries\raggedright}
+{\chaptername\ \thechapter:}
+{0.5em}
+{\huge\bfseries\raggedright}
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+
+\usepackage[ruled,vlined]{algorithm2e}
+\SetKwProg{Fn}{Function}{}{end}
+\usepackage{chngcntr}
+\counterwithout{section}{chapter} % Loại bỏ sự phụ thuộc của section vào chapter
+
+\begin{document}
+
+% ---------------------- 1. COVER PAGE -----------------------
+\begin{titlepage}
+\thispagestyle{empty}
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw[line width=2pt] ($(current page.north west) + (2.0cm,-2.0cm)$) rectangle ($(current page.south east) + (-2.1cm,2.1cm)$); 
+\draw[line width=0.5pt] ($(current page.north west) + (2.1cm,-2.1cm)$) rectangle ($(current page.south east) + (-2.0cm,2.0cm)$);
+\end{tikzpicture}
+
+\begin{center}
+\vspace*{0.5cm}
+\large \textbf{VNU-HCM UNIVERSITY OF SCIENCE}\\[-0.05cm]
+\large \textbf{Faculty of Information Technology}
+
+\vspace{1.5cm}
+\Huge \textbf{PROJECT: [YOUR PROJECT TITLE]} \\
+\Large \textbf{Subject: [Your Subject Name]}
+
+\vspace{1cm}
+% Bỏ comment dòng dưới và chèn logo nếu cần
+% \includegraphics[width=3.8cm]{hcmus_logo.jpg} 
+\vspace{3.8cm} % Xóa dòng này nếu dùng logo
+
+\vspace{1.5cm}
+\large \textbf{Instructors:}\\[0.3cm]
+[Instructor Name 1] \\
+[Instructor Name 2]
+
+\vspace{1.5cm}
+\Large \textbf{Student Names:}\\[0.3cm]
+
+
+\vfill
+\large \textbf{Ho Chi Minh City, [Year]}
+\end{center}
+\end{titlepage}
+% ─────────────────────────────────────────────────────────
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+
+\listoffigures % Danh mục hình ảnh
+\listoftables % Danh mục bảng biểu
+\clearpage
+% ══════════════════════════════════════════════════════════════════════════════
+\section{1. \quad Group Information}
+In accordance with the project requirements, the following table details the contributions and responsibilities of each member within \textbf{Group [X]}.
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|r|}
+\hline
+\textbf{Student Name} & \textbf{Student ID} & \textbf{Assigned Tasks} & \textbf{\% Completed} \\ \hline
+[Student Name 1] & [ID 1] & [Task description here] & 100\% \\ \hline
+[Student Name 2] & [ID 2] & [Task description here] & 100\% \\ \hline
+[Student Name 3] & [ID 3] & [Task description here] & 100\% \\ \hline
+[Student Name 4] & [ID 4] & [Task description here] & 100\% \\ \hline
+\multicolumn{3}{|l|}{\textbf{Total Group Completion}} & \textbf{100\%} \\ \hline
+\end{tabularx}
+\caption{Group member roles and contribution summary}
+\end{table}
+\newpage
+% ══════════════════════════════════════════════════════════════════════════════
+\section{2. \quad Cơ sở lý thuyết về mạng WLAN}
+
+\subsection{2.1 \quad Khái niệm}
+
+
+\subsection{2.2 \quad Các thành phần của mạng WLAN}
+Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần khác nhau, đóng vai trò quan trọng trong việc truyền tải và xử lý tín hiệu không dây:
+\begin{itemize}
+    \item \textbf{Access Point (AP) / Wireless Router:}
+    \item \textbf{Wireless Network Interface Controller (WNIC):} 
+    \item \textbf{Thiết bị đầu cuối (End Devices):} 
+    \item \textbf{Môi trường truyền dẫn:} 
+\end{itemize}
+
+\subsection{2.3 \quad Mô hình triển khai và Giải pháp kết nối}
+
+\subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}
+
+\begin{itemize}
+    \item \textbf{Ưu điểm:} 
+    \item \textbf{Nhược điểm:} 
+\end{itemize}
+
+\subsubsection{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)}
+
+\begin{itemize}
+    \item \textbf{Ưu điểm:} 
+    \item \textbf{Nhược điểm:} 
+\end{itemize}
+
+\subsubsection{2.3.3 Giải pháp kết nối cho thiết bị đầu cuối}
+Dưới đây là các giải pháp kết nối mạng và cấu hình cho 3 loại thiết bị phổ biến:
+\begin{itemize}
+    \item \textbf{Laptop:} 
+    \item \textbf{Desktop (PC):}
+    \item \textbf{Smartphone:} 
+\end{itemize}
+\newpage
+% ══════════════════════════════════════════════════════════════════════════════
+\section{3. \quad Triển khai cấu hình thực tế mạng WLAN}
+
+\textit{Phần này ghi chép lại toàn bộ quá trình thực hiện trong video đính kèm. Xuyên suốt quá trình cấu hình, mọi bước thiết lập đều có hình ảnh minh chứng xác thực từ thiết bị của nhóm.}
+
+\subsection{3.1 \quad Chuẩn bị và Trạng thái ban đầu}
+Trước khi cấu hình, nhóm đã ghi chú lại các thông tin cần thiết[cite: 11]:
+\begin{itemize}
+    \item \textbf{IP Default Gateway:} [Điền IP Router, VD: 192.168.0.1]
+    \item \textbf{Tài khoản quản trị Router:} [VD: admin / admin]
+    \item \textbf{Dải IP dự kiến cấp phát:} [VD: 192.168.0.100 - 192.168.0.199]
+\end{itemize}
+% (Phần chèn ảnh trạng thái chưa kết nối giữ nguyên như template của bạn)
+
+\subsection{3.2 \quad Cấu hình Router (Mô hình Infrastructure)}
+
+
+\textbf{Minh chứng cấu hình SSID:} \\
+Tên mạng WLAN của nhóm là: \textbf{[VD: 19CLC5-N01]}.
+% (Chèn hình ảnh cấu hình SSID, Security, DHCP, MAC Filtering như template của bạn)
+
+\subsection{3.3 \quad Cấu hình thiết bị đầu cuối}
+Quá trình kết nối từng loại thiết bị vô mạng kèm hình ảnh minh chứng kiểm tra thành công:
+% (Giữ nguyên các mục 3.3.1, 3.3.2, 3.3.3 như template, nhớ chèn ảnh cho Laptop, Desktop, Smartphone)
+
+\subsection{3.4 \quad Triển khai Mạng Ad-hoc}
+\textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành [Tên HĐH] không còn hỗ trợ tạo Ad-hoc trực tiếp, nhóm đã thực hiện cấu hình mạng Ad-hoc trên máy ảo.}
+% (Điền các bước tạo Ad-hoc trên máy ảo và chèn ảnh lệnh Ping)
+\newpage
+% ══════════════════════════════════════════════════════════════════════════════
+\section{4. \quad Minh chứng Video Demo}
+Nhằm đáp ứng yêu cầu của đồ án, nhóm đã thực hiện quay video demo ghi lại toàn bộ quá trình thực hành và cấu hình mạng WLAN.
+
+\subsection{4.1 \quad Link Video}
+Do dung lượng file \texttt{[Điền tên file, VD: 19CLC5-N01\_WLAN\_video.mp4]} quá lớn, nhóm đã tải video lên Google Drive và tạo link chia sẻ
+\begin{itemize}
+    \item \textbf{Link Google Drive:} \url{[____]}
+\end{itemize}
+
+\subsection{4.2 \quad Xác nhận hợp lệ}
+Dưới đây là hình ảnh chụp chứng minh ngày cập nhật của video trên Google Drive là trước thời hạn (deadline) nộp bài
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{images/minh_chung_thoi_gian.png}
+    \fbox{\rule{0pt}{2in} \rule{0.8\textwidth}{0pt}}
+    \caption{Hình ảnh chứng minh thời gian cập nhật video lên Drive hợp lệ}
+\end{figure}
+
+\subsection{4.3 \quad Checklist video}
+Video demo của nhóm được đính kèm trong báo cáo này đã đáp ứng đầy đủ các tiêu chí sau[cite: 21]:
+\begin{itemize}
+    \item [\checkmark] Thu tiếng giải thích rõ ràng từng bước cấu hình mạng WLAN.
+    \item [\checkmark] Có quay hình ảnh người thực hiện thao tác cấu hình trực tiếp trên thiết bị.
+\end{itemize}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{5. \quad Lời Cảm Ơn \& Kết Luận}
+% (Đổi tên section Lời Cảm Ơn thành số 5 và giữ nguyên nội dung cũ của bạn)
+
+% ══════════════════════════════════════════════════════════════════════════════
+\begin{thebibliography}{99}
+
+\bibitem{ref1} 
+    [Tên Tác Giả], \textit{[Tên Sách/Tài liệu tham khảo]}, Nhà xuất bản, [Năm].
+
+\bibitem{ref2} 
+    [Tên Giảng Viên], \textit{Slide bài giảng CTT105 – Mạng Máy Tính}, Trường ĐH Khoa Học Tự Nhiên.
+
+\bibitem{ref3} 
+    "[Tiêu đề trang web dùng để tra cứu cấu hình Router]." [Trực tuyến]. Available: \url{https://www.example.com}. Truy cập ngày: [Ngày/Tháng/Năm].
+
+\end{thebibliography}
+
+\end{document}

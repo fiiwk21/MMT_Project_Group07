@@ -1,0 +1,20 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{1. \hskip 1em\relax Group Information}{3}{Doc-Start}%
+\contentsline {section}{2. \hskip 1em\relax Cơ sở lý thuyết về mạng WLAN}{4}{table.caption.1}%
+\contentsline {subsection}{2.1 \hskip 1em\relax Khái niệm}{4}{section*.2}%
+\contentsline {subsection}{2.2 \hskip 1em\relax Các thành phần của mạng WLAN}{4}{section*.2}%
+\contentsline {subsection}{2.3 \hskip 1em\relax Mô hình triển khai và Giải pháp kết nối}{4}{section*.2}%
+\contentsline {subsubsection}{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}{4}{section*.3}%
+\contentsline {subsubsection}{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)}{4}{section*.3}%
+\contentsline {subsubsection}{2.3.3 Giải pháp kết nối cho thiết bị đầu cuối}{4}{section*.3}%
+\contentsline {section}{3. \hskip 1em\relax Triển khai cấu hình thực tế mạng WLAN}{5}{section*.3}%
+\contentsline {subsection}{3.1 \hskip 1em\relax Chuẩn bị và Trạng thái ban đầu}{5}{section*.4}%
+\contentsline {subsection}{3.2 \hskip 1em\relax Cấu hình Router (Mô hình Infrastructure)}{5}{section*.4}%
+\contentsline {subsection}{3.3 \hskip 1em\relax Cấu hình thiết bị đầu cuối}{5}{section*.4}%
+\contentsline {subsection}{3.4 \hskip 1em\relax Triển khai Mạng Ad-hoc}{5}{section*.4}%
+\contentsline {section}{4. \hskip 1em\relax Minh chứng Video Demo}{6}{section*.4}%
+\contentsline {subsection}{4.1 \hskip 1em\relax Link Video}{6}{section*.5}%
+\contentsline {subsection}{4.2 \hskip 1em\relax Xác nhận hợp lệ}{6}{section*.5}%
+\contentsline {subsection}{4.3 \hskip 1em\relax Checklist video}{6}{figure.caption.6}%
+\contentsline {section}{5. \hskip 1em\relax Lời Cảm Ơn \& Kết Luận}{6}{figure.caption.6}%
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{7}{chapter*.7}%
