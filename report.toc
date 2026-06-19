@@ -1,5 +1,5 @@
 \babel@toc {vietnamese}{}\relax 
-\contentsline {section}{1. Group Information}{3}{Doc-Start}%
+\contentsline {section}{1. THÔNG TIN NHÓM}{3}{Doc-Start}%
 \contentsline {section}{2. Cơ sở lý thuyết về mạng WLAN}{4}{table.caption.1}%
 \contentsline {subsection}{2.1 Khái niệm}{4}{table.caption.1}%
 \contentsline {subsection}{2.2 Các thành phần của mạng WLAN}{4}{table.caption.1}%
