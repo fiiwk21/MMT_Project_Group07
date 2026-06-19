@@ -6,10 +6,36 @@
 \subsection{2.2 Các thành phần của mạng WLAN}
 Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần khác nhau, đóng vai trò quan trọng trong việc truyền tải và xử lý tín hiệu không dây:
 \begin{itemize}
-    \item \textbf{Access Point (AP) / Wireless Router:}
-    \item \textbf{Wireless Network Interface Controller (WNIC):} 
-    \item \textbf{Thiết bị đầu cuối (End Devices):} 
-    \item \textbf{Môi trường truyền dẫn:} 
+    \item \textbf{Access Point (AP) / Wireless Router:} là thiết bị trung tâm của mạng WLAN, 
+    có chức năng thu phát tín hiệu vô tuyến và đóng vai trò cầu nối giữa các thiết bị không dây 
+    với mạng có dây (LAN) hoặc Internet. Access Point hoạt động ở tầng liên kết dữ liệu (Data 
+    Link Layer), quản lý việc kết nối, xác thực và phân phối địa chỉ IP cho các thiết bị đầu cuối 
+    thông qua giao thức DHCP. Wireless Router tích hợp thêm chức năng định tuyến (routing), cho 
+    phép kết nối trực tiếp với modem để chia sẻ đường truyền Internet đến toàn bộ mạng nội bộ.
+    \item \textbf{Wireless Network Interface Controller (WNIC):} hay còn gọi là card mạng không 
+    dây, là thành phần phần cứng được tích hợp hoặc gắn thêm vào thiết bị đầu cuối, đảm nhận 
+    nhiệm vụ mã hóa dữ liệu thành tín hiệu vô tuyến để phát đi và giải mã tín hiệu nhận về thành 
+    dữ liệu số. WNIC hoạt động theo các chuẩn IEEE 802.11 (Wi-Fi), hỗ trợ một hoặc nhiều băng tần 
+    (2.4\,GHz, 5\,GHz, 6\,GHz), và thực hiện các cơ chế kiểm soát truy cập môi trường (MAC) như 
+    CSMA/CA để tránh xung đột tín hiệu trong quá trình truyền.
+    \item \textbf{Thiết bị đầu cuối (End Devices):} là các thiết bị của người dùng kết nối vào 
+    mạng WLAN thông qua WNIC, bao gồm máy tính xách tay, điện thoại thông minh, máy tính bảng, 
+    máy in không dây, camera IP và các thiết bị IoT. Đây là nguồn phát sinh và tiếp nhận dữ liệu 
+    trong mạng; mỗi thiết bị đầu cuối được nhận diện bởi địa chỉ MAC duy nhất và địa chỉ IP do 
+    AP/Router cấp phát, cho phép định tuyến gói tin chính xác trong hệ thống mạng.
+    \item \textbf{Môi trường truyền dẫn:} trong mạng WLAN là sóng điện từ lan truyền trong không 
+    gian tự do, chủ yếu sử dụng hai băng tần phổ biến:
+        \begin{itemize}
+            \item \textbf{Băng tần 2.4\,GHz:} có khả năng truyền tín hiệu xa hơn và xuyên qua vật 
+            cản tốt hơn, tuy nhiên dễ bị nhiễu do phải chia sẻ băng tần với nhiều thiết bị khác như 
+            lò vi sóng và Bluetooth. Băng tần này cung cấp 13 kênh (tại Việt Nam), trong đó chỉ có 
+            3 kênh không chồng lấn (1, 6, 11), dẫn đến tốc độ truyền dữ liệu thấp hơn trong môi 
+            trường đông thiết bị.
+            \item \textbf{Băng tần 5\,GHz:} cung cấp băng thông rộng hơn với nhiều kênh không chồng 
+            lấn hơn, cho tốc độ truyền dữ liệu cao hơn và ít nhiễu hơn. Tuy nhiên, tầm phủ sóng 
+            ngắn hơn và khả năng xuyên vật cản kém hơn so với băng tần 2.4\,GHz, phù hợp với các 
+            ứng dụng đòi hỏi tốc độ cao trong phạm vi gần.
+        \end{itemize}
 \end{itemize}
 
 \subsection{2.3 Mô hình triển khai và Giải pháp kết nối}

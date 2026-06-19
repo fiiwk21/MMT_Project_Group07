@@ -3,18 +3,19 @@
 \contentsline {section}{2. Cơ sở lý thuyết về mạng WLAN}{4}{table.caption.1}%
 \contentsline {subsection}{2.1 Khái niệm}{4}{table.caption.1}%
 \contentsline {subsection}{2.2 Các thành phần của mạng WLAN}{4}{table.caption.1}%
-\contentsline {subsection}{2.3 Mô hình triển khai và Giải pháp kết nối}{4}{table.caption.1}%
-\contentsline {subsubsection}{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}{4}{table.caption.1}%
-\contentsline {subsubsection}{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)}{4}{table.caption.1}%
-\contentsline {subsubsection}{2.3.3 Giải pháp kết nối cho thiết bị đầu cuối}{4}{table.caption.1}%
-\contentsline {section}{3. Triển khai cấu hình thực tế mạng WLAN}{5}{table.caption.1}%
-\contentsline {subsection}{3.1 Ghi nhận thông số ban đầu của Router}{5}{table.caption.1}%
-\contentsline {subsection}{3.2 Đăng nhập trang quản trị và thiết lập SSID}{7}{figure.caption.4}%
-\contentsline {subsection}{3.3 Cấu hình thiết bị đầu cuối}{8}{figure.caption.12}%
-\contentsline {subsection}{3.4 Triển khai Mạng Ad-hoc}{8}{figure.caption.12}%
-\contentsline {section}{4. Minh chứng Video Demo}{9}{figure.caption.12}%
-\contentsline {subsection}{4.1 Link Video}{9}{figure.caption.12}%
-\contentsline {subsection}{4.2 Xác nhận hợp lệ}{9}{figure.caption.12}%
-\contentsline {subsection}{4.3 Checklist video}{9}{figure.caption.13}%
-\contentsline {section}{5. Lời Cảm Ơn \& Kết Luận}{10}{figure.caption.13}%
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{11}{chapter*.14}%
+\contentsline {subsection}{2.3 Mô hình triển khai và Giải pháp kết nối}{5}{table.caption.1}%
+\contentsline {subsubsection}{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}{5}{table.caption.1}%
+\contentsline {subsubsection}{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)}{5}{table.caption.1}%
+\contentsline {subsubsection}{2.3.3 Giải pháp kết nối cho thiết bị đầu cuối}{5}{table.caption.1}%
+\contentsline {section}{3. Triển khai cấu hình thực tế mạng WLAN}{6}{table.caption.1}%
+\contentsline {subsection}{3.1 Ghi nhận thông số ban đầu của Router}{6}{table.caption.1}%
+\contentsline {subsection}{3.2 Đăng nhập trang quản trị và thiết lập SSID}{8}{figure.caption.4}%
+\contentsline {subsection}{3.3 Cấu hình thiết bị đầu cuối}{9}{figure.caption.12}%
+\contentsline {subsubsection}{3.3.1 Kết nối bằng Laptop/PC}{9}{figure.caption.12}%
+\contentsline {subsection}{3.4 Triển khai Mạng Ad-hoc}{11}{figure.caption.20}%
+\contentsline {section}{4. Minh chứng Video Demo}{12}{figure.caption.20}%
+\contentsline {subsection}{4.1 Link Video}{12}{figure.caption.20}%
+\contentsline {subsection}{4.2 Xác nhận hợp lệ}{12}{figure.caption.20}%
+\contentsline {subsection}{4.3 Checklist video}{12}{figure.caption.21}%
+\contentsline {section}{5. Lời Cảm Ơn \& Kết Luận}{13}{figure.caption.21}%
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{14}{chapter*.22}%

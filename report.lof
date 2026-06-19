@@ -1,7 +1,14 @@
 \babel@toc {vietnamese}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Kết quả lệnh \texttt {ipconfig} hiển thị Default Gateway và địa chỉ IPv4 của máy client}}{5}{figure.caption.2}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Tem thông số kỹ thuật mặt sau Router H646GM-V thể hiện Web ID, mật khẩu quản trị và SSID mặc định}}{6}{figure.caption.4}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Giao diện đăng nhập trang quản trị Router Viettel H646GM-V}}{7}{figure.caption.7}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Giao diện \textit {Easy Setup} -- WiFi 2.4GHz Settings trước khi đổi tên mạng (SSID mặc định)}}{8}{figure.caption.10}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Giao diện \textit {Easy Setup} sau khi cập nhật tên mạng theo chuẩn định dạng của nhóm}}{8}{figure.caption.12}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Hình ảnh chứng minh thời gian cập nhật video lên Drive hợp lệ}}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Kết quả lệnh \texttt {ipconfig} hiển thị Default Gateway và địa chỉ IPv4 của máy client}}{6}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Tem thông số kỹ thuật mặt sau Router H646GM-V thể hiện Web ID, mật khẩu quản trị và SSID mặc định}}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Giao diện đăng nhập trang quản trị Router Viettel H646GM-V}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Giao diện \textit {Easy Setup} -- WiFi 2.4GHz Settings trước khi đổi tên mạng (SSID mặc định)}}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Giao diện \textit {Easy Setup} sau khi cập nhật tên mạng theo chuẩn định dạng của nhóm}}{9}{figure.caption.12}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Giao diện Router xác nhận chưa có thiết bị thử nghiệm kết nối}}{10}{figure.caption.13}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Chọn kết nối vào SSID \texttt {25CLC10-N07}}}{10}{figure.caption.14}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Nhập mật khẩu xác thực WPA2-PSK}}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Trạng thái \textit {Connected, secured} sau khi kết nối thành công qua DHCP}}{10}{figure.caption.16}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Router ghi nhận thiết bị \texttt {Jin56} kết nối thành công qua DHCP}}{10}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Cấu hình địa chỉ IP tĩnh thủ công trên thiết bị đầu cuối}}{11}{figure.caption.19}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Kết quả \texttt {ipconfig} xác nhận IP tĩnh được gán thành công}}{11}{figure.caption.20}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Hình ảnh chứng minh thời gian cập nhật video lên Drive hợp lệ}}{12}{figure.caption.21}%

@@ -112,6 +112,106 @@ Sau khi đã có đầy đủ thông số cần thiết, nhóm tiến hành đă
 
 \subsection{3.3 Cấu hình thiết bị đầu cuối}
 Quá trình kết nối từng loại thiết bị vô mạng kèm hình ảnh minh chứng kiểm tra thành công:
+\subsubsection{3.3.1 Kết nối bằng Laptop/PC}
 
+Sau khi hoàn tất cấu hình SSID, nhóm tiến hành kiểm tra và kết nối thiết bị 
+Laptop/PC vào mạng \texttt{25CLC10-N07} theo hai phương thức: cấp phát địa chỉ 
+IP tự động (DHCP) và cấu hình địa chỉ IP tĩnh (Static IP).
+
+\textbf{Kiểm tra trạng thái trước khi kết nối:}
+Trước tiên, nhóm truy cập vào giao diện quản trị Router, kiểm tra mục 
+\textit{Connected Devices} để xác nhận chưa có thiết bị thử nghiệm nào trong 
+danh sách kết nối.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/router-no-device.png}
+    \caption{Giao diện Router xác nhận chưa có thiết bị thử nghiệm kết nối}
+    \label{fig:router-no-device}
+\end{figure}
+
+\textbf{Kết nối bằng IP động (DHCP):}
+Thiết bị được giữ nguyên ở chế độ \textit{Obtain an IP address automatically}. 
+Nhóm chọn SSID \texttt{25CLC10-N07} từ danh sách mạng Wi-Fi khả dụng, nhập mật 
+khẩu \texttt{1234567890a} và nhấn \textbf{Connect}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/connect-dhcp-click.png}
+    \caption{Chọn kết nối vào SSID \texttt{25CLC10-N07}}
+    \label{fig:connect-dhcp-click}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/connect-dhcp-password.png}
+    \caption{Nhập mật khẩu xác thực WPA2-PSK}
+    \label{fig:connect-dhcp-password}
+\end{figure}
+
+Sau khi xác thực thành công, giao diện Wi-Fi hiển thị trạng thái 
+\textit{Connected, secured}, xác nhận thiết bị đã kết nối thành công vào mạng.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/connect-dhcp-success.png}
+    \caption{Trạng thái \textit{Connected, secured} sau khi kết nối thành công qua DHCP}
+    \label{fig:connect-dhcp-success}
+\end{figure}
+
+Giao diện quản trị Router ghi nhận thiết bị \texttt{Jin56} đã xuất hiện trong 
+danh sách với địa chỉ IP được cấp phát tự động là \texttt{192.168.1.6}, băng tần 
+2.4GHz, RSSI \texttt{-71 dBm}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/router-client-dhcp.png}
+    \caption{Router ghi nhận thiết bị \texttt{Jin56} kết nối thành công qua DHCP}
+    \label{fig:router-client-dhcp}
+\end{figure}
+
+\textbf{Kết nối bằng IP tĩnh (Static IP):}
+Nhóm tiến hành cấu hình địa chỉ IP thủ công trên thiết bị bằng cách vào 
+\textit{Network \& Internet Settings} $\rightarrow$ \textit{Wi-Fi} $\rightarrow$ 
+\textit{Edit network IP settings} $\rightarrow$ chọn \textbf{Manual}. Các thông 
+số được nhập như sau:
+
+\begin{table}[H]
+    \centering
+    \caption{Thông số cấu hình IP tĩnh trên thiết bị đầu cuối}
+    \label{tab:static-ip}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Thông số} & \textbf{Giá trị} \\
+        \hline
+        IP Address & 192.168.0.2 \\
+        \hline
+        Subnet Mask & 255.255.255.0 \\
+        \hline
+        Default Gateway & 192.168.1.1 \\
+        \hline
+        Preferred DNS & 8.8.8.8 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{image/static-ip-config.png}
+    \caption{Cấu hình địa chỉ IP tĩnh thủ công trên thiết bị đầu cuối}
+    \label{fig:static-ip-config}
+\end{figure}
+
+Sau khi lưu cấu hình, nhóm sử dụng lệnh \texttt{ipconfig} để xác nhận các thông 
+số đã được áp dụng chính xác. Kết quả hiển thị địa chỉ IPv4 \texttt{192.168.0.2}, 
+Subnet Mask \texttt{255.255.255.0} và Default Gateway \texttt{192.168.1.1}, đúng 
+với thông số đã nhập.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/ipconfig-static.png}
+    \caption{Kết quả \texttt{ipconfig} xác nhận IP tĩnh được gán thành công}
+    \label{fig:ipconfig-static}
+\end{figure}
 \subsection{3.4 Triển khai Mạng Ad-hoc}
 \textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành [Tên HĐH] không còn hỗ trợ tạo Ad-hoc trực tiếp, nhóm đã thực hiện cấu hình mạng Ad-hoc trên máy ảo.}
