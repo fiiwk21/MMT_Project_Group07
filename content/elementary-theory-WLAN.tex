@@ -50,39 +50,102 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
 
 \subsection{2.3 Mô hình triển khai và Giải pháp kết nối}
 
-\subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}
+\subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)[1]}
 
 \begin{itemize}
-    \item \textbf{Khái niệm:} Mạng cơ sở hạ tầng (Infrastructure networks) là các mạng có cơ sở hạ tầng được định nghĩa trước và được cấu thành từ một số lượng cố định các nút mạng. 
-    Tại đây, các dịch vụ mạng được cung cấp thông qua các cơ sở hạ tầng đã được xây dựng từ trước. 
-    Trong mạng này, điểm truy cập (Access point) đóng vai trò là bộ điều khiển trung tâm cho mỗi thiết bị. 
-    Các điểm truy cập thực chất chính là các trạm cơ sở cố định được kết nối bằng dây cáp. 
-    Tất cả các thiết bị trong mạng không dây đều giao tiếp thông qua một bộ định tuyến (router), tức là điểm truy cập. 
-    Các ví dụ điển hình bao gồm mạng LAN không dây (Wireless LAN), mạng vệ tinh, v.v.
-    \item \textbf{Ưu điểm:} 
+    \item \textbf{Khái niệm:} 
+    Loại mạng này hoạt động theo mô hình quản lý tập trung, 
+    trong đó mọi dữ liệu và gói tin bắt buộc phải truyền qua một thiết bị điều khiển trung gian chứ các thiết bị đầu cuối không nói chuyện trực tiếp với nhau. 
+    Mô hình này thường được lắp đặt cố định để phục vụ kết nối lâu dài,
+    ví dụ như mạng Wi-Fi gia đình, văn phòng, giảng đường đại học, \ldots.
+    
+    \item \textbf{Thành phần:} 
     \begin{itemize}
-        \item Tốc độ truyền mạng nhanh hơn mô hình Ad-hoc.
-        \item Tính bảo mật cao hơn mô hình Ad-hoc.
+        \item \textbf{Access Point (AP) / Router Wi-Fi:} 
+        Thiết bị trung tâm đóng vai trò làm trạm gốc để quản lý, điều phối và trung chuyển mọi dữ liệu trong mạng.
+        \item \textbf{Thiết bị đầu cuối (Stations - STA)}: 
+        Các máy trạm của người dùng như Smartphone, Laptop, PC có trang bị card mạng không dây để thu phát sóng.
+        \item \textbf{Mạng xương sống (Wired Infrastructure):} 
+        Hệ thống dây cáp mạng mạng (Ethernet) dùng để kết nối các cục AP lại với nhau và kết nối ra Internet toàn cầu.
     \end{itemize}
-    \item \textbf{Nhược điểm:}
+
+    \item \textbf{Giao thức áp dụng:} 
     \begin{itemize}
-        \item Chi phí lắp đặt tốn kém, gây nhiều hạn chế trong việc lắp đặt ở những nơi vùng sâu vùng xa, núi, đồi, \ldots.
+        \item \textbf{IEEE 802.11 (Wi-Fi):} 
+        Tập tiêu chuẩn cốt lõi quy định cách thức truyền và nhận dữ liệu qua sóng vô tuyến lớp vật lý.
+        \item \textbf{WPA2-PSK (AES):} 
+        Giao thức bảo mật dùng để kiểm tra mật khẩu (Pre-Shared Key) và mã hóa dữ liệu lớp 2 nhằm chống lại việc nghe lén.
+        \item \textbf{DHCP:} 
+        Giao thức lớp ứng dụng chịu trách nhiệm tự động gán địa chỉ IP động cho các thiết bị đầu cuối ngay khi kết nối thành công.
+    \end{itemize}
+
+    \item \textbf{Quy trình hoạt động:} 
+    \begin{itemize}
+        \item \textbf{Bước 1 (Phát sóng):} 
+        Cục AP liên tục phát ra các gói tin quảng bá (Beacon frames) mang theo định danh mạng (SSID như \texttt{25CLC10-N07}) ra không trung.
+        \item \textbf{Bước 2 (Dò mạng):} 
+        Card mạng của thiết bị đầu cuối bắt được sóng Beacon này và hiển thị tên mạng lên màn hình cho người dùng bấm chọn kết nối.
+        \item \textbf{Bước 3 (Xác thực):} 
+        Khi người dùng nhập mật khẩu, thiết bị và AP thực hiện giao thức xác thực WPA2-PSK nhằm bắt tay thiết lập một kênh truyền an toàn.
+        \item \textbf{Bước 4 (Nhận IP):} 
+        Sau khi kết nối thành công, thiết bị gửi tin nhắn xin IP, cục Router nhận được sẽ tự động gán địa chỉ IP động thông qua DHCP để thiết bị có thể lướt web.
+    \end{itemize}
+
+    \item \textbf{Ưu điểm[4]:} 
+    \begin{itemize}
+        \item Khả năng mở rộng (Scalability) cao; người dùng dễ dàng thêm thiết bị mới vào mạng (chỉ cần nhập đúng mật khẩu) mà không gây ảnh hưởng đến các máy khác đang dùng.
+        \item Tính bảo mật và quản lý cao vì cục AP dễ dàng thiết lập mật khẩu mã hóa mạnh, cài đặt tường lửa và kiểm soát được danh sách các máy đang truy cập.
+    \end{itemize}
+
+    \item \textbf{Nhược điểm[4]:} 
+    \begin{itemize}
+        \item Tốn chi phí đầu tư phần cứng ban đầu tương đối cao bao gồm tiền mua cục Router, Access Point, switch và hệ thống dây cáp mạng mạng.
+        \item Gặp rủi ro lỗi điểm đơn duy nhất (Single Point of Failure); toàn bộ hệ thống mạng sẽ sập hoàn toàn nếu thiết bị điều khiển trung tâm (Router/AP) bị hỏng hoặc mất nguồn điện.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)}
+
+\subsubsection{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)[1]}
 
 \begin{itemize}
-    \item \textbf{Khái niệm:}Loại mạng này là một nhóm các thiết bị đầu cuối độc lập giao tiếp với nhau bằng cách hình thành một mạng vô tuyến. 
-    Các liên kết trong mạng không dây có băng thông thấp hơn so với các mạng có dây. 
-    Trong mạng này, mỗi nút mạng đóng vai trò như một bộ định tuyến, và kết nối mạng được phân phối giữa các nút với nhau. 
-    Trong một mạng tùy biến (ad-hoc network), việc hình thành mạng diễn ra một cách linh hoạt (động) nhờ vào sự hợp tác giữa các nút ngẫu nhiên. 
-    Các ví dụ về mạng không có cơ sở hạ tầng bao gồm Mạng cảm biến không dây (WSN) và Mạng di động tùy biến (MANET).
-    \item \textbf{Ưu điểm:} 
-    \item \textbf{Nhược điểm:} 
+    \item \textbf{Khái niệm:} 
+    Loại mạng này là một nhóm các thiết bị đầu cuối độc lập giao tiếp với nhau bằng cách hình thành một mạng vô tuyến mang tính chất tạm thời, tự phát ngay lập tức khi cần (on-the-fly) giữa các thiết bị ở gần nhau mà không cần chuẩn bị trước hạ tầng Router. 
+    Các ví dụ về mạng không có cơ sở hạ tầng bao gồm AirDrop, Quick Share, Mạng cảm biến không dây (WSN) và Mạng di động tùy biến (MANET).
+    
+    \item \textbf{Thành phần:} 
     \begin{itemize}
-        \item Tốc độ truyền mạng chậm hơn mô hình Infrastructure.
-        \item Tính bảo mật thấp hơn mô hình Infrastructure.
+        \item Chỉ bao gồm các thiết bị đầu cuối của người dùng (như Laptop, Smartphone) tự kết nối trực tiếp với nhau (Peer-to-Peer).
+        \item Hoàn toàn không có sự xuất hiện của các thiết bị trung gian quản lý như Access Point hay Router Wi-Fi.
+    \end{itemize}
+
+    \item \textbf{Giao thức áp dụng:} 
+    \begin{itemize}
+        \item \textbf{IEEE 802.11 (IBSS):} 
+        Tiêu chuẩn quy định kiến trúc mạng không dây độc lập không có trạm gốc trung tâm.
+        \item \textbf{Static IP / APIPA:} 
+        Cơ chế tự gán địa chỉ IP nội bộ tạm thời (dải 169.254.x.x) hoặc nhập thủ công bằng tay để các máy nhận diện được nhau vì mạng không có giao thức DHCP cấp tự động.
+    \end{itemize}
+
+    \item \textbf{Quy trình hoạt động:} 
+    \begin{itemize}
+        \item \textbf{Bước 1 (Đồng bộ):} 
+        Các thiết bị đầu cuối khi tham gia mạng phải tự luân phiên nhau phát tín hiệu Beacon để đồng bộ hóa tần số sóng và thời gian giữa các máy.
+        \item \textbf{Bước 2 (Định tuyến):} 
+        Các nút mạng tự đóng vai trò làm bộ định tuyến, tự tìm đường và truyền thẳng gói tin sang card mạng của máy đích bằng sóng vô tuyến tầm ngắn.
+        \item \textbf{Bước 3 (Gán địa chỉ):} 
+        Người dùng cài đặt IP tĩnh cùng dải cho các máy (hoặc để máy tự sinh IP Link-Local) để thiết lập kết nối ở tầng mạng, giúp các thiết bị nhận diện và truyền dữ liệu cho nhau.
+    \end{itemize}
+
+    \item \textbf{Ưu điểm[4]:} 
+    \begin{itemize}
+        \item Rất rẻ và tiện lợi vì không tốn chi phí mua sắm thiết bị phần cứng như cục Router, AP hay dây cáp mạng, có thể tự thiết lập mọi lúc mọi nơi.
+        \item Độ bền bỉ cao và không sợ bị sập toàn bộ mạng; nếu một máy bị tắt nguồn hay rời đi thì các máy còn lại vẫn giữ kết nối và liên lạc bình thường.
+    \end{itemize}
+
+    \item \textbf{Nhược điểm[4]:} 
+    \begin{itemize}
+        \item Tốc độ truyền mạng chậm hơn mô hình Infrastructure; nếu có quá nhiều máy cùng kết nối sẽ gây ra hiện tượng nhiễu sóng, xung đột gói tin và làm mạng bị nghẽn mạch.
+        \item Tính bảo mật thấp hơn mô hình Infrastructure vì không có thiết bị trung tâm quản lý, người lạ rất dễ lẻn vào mạng hoặc nghe lén dữ liệu truyền qua không trung.
     \end{itemize}
 \end{itemize}
 
