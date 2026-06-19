@@ -6,17 +6,17 @@
 \contentsline {subsection}{2.3 Mô hình triển khai và Giải pháp kết nối}{6}{table.caption.1}%
 \contentsline {subsubsection}{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)[1]}{6}{table.caption.1}%
 \contentsline {subsubsection}{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)[1]}{7}{table.caption.1}%
-\contentsline {subsubsection}{2.3.3 Giải pháp kết nối cho thiết bị đầu cuối}{9}{table.caption.1}%
-\contentsline {section}{3. Triển khai cấu hình thực tế mạng WLAN}{10}{table.caption.1}%
-\contentsline {subsection}{3.1 Ghi nhận thông số ban đầu của Router}{10}{table.caption.1}%
-\contentsline {subsection}{3.2 Đăng nhập trang quản trị và thiết lập SSID}{12}{figure.caption.4}%
-\contentsline {subsection}{3.3 Cấu hình thiết bị đầu cuối}{13}{figure.caption.12}%
-\contentsline {subsubsection}{3.3.1 Kết nối bằng Laptop/PC}{13}{figure.caption.12}%
-\contentsline {subsubsection}{3.3.2 Kết nối bằng Smartphone}{15}{figure.caption.20}%
-\contentsline {subsection}{3.4 Triển khai Mạng Ad-hoc}{21}{figure.caption.29}%
-\contentsline {section}{4. Minh chứng Video Demo}{22}{figure.caption.29}%
-\contentsline {subsection}{4.1 Link Video}{22}{figure.caption.29}%
-\contentsline {subsection}{4.2 Xác nhận hợp lệ}{22}{figure.caption.29}%
-\contentsline {subsection}{4.3 Checklist video}{22}{figure.caption.30}%
-\contentsline {section}{5. Lời Cảm Ơn \& Kết Luận}{23}{figure.caption.30}%
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{24}{chapter*.31}%
+\contentsline {subsubsection}{2.3.3 Giải pháp kết nối cho thiết bị đầu cuối}{8}{table.caption.1}%
+\contentsline {section}{3. Triển khai cấu hình thực tế mạng WLAN}{9}{table.caption.1}%
+\contentsline {subsection}{3.1 Ghi nhận thông số ban đầu của Router}{9}{table.caption.1}%
+\contentsline {subsection}{3.2 Đăng nhập trang quản trị và thiết lập SSID}{11}{figure.caption.4}%
+\contentsline {subsection}{3.3 Cấu hình thiết bị đầu cuối}{12}{figure.caption.12}%
+\contentsline {subsubsection}{3.3.1 Kết nối bằng Laptop/PC}{12}{figure.caption.12}%
+\contentsline {subsubsection}{3.3.2 Kết nối bằng Smartphone}{14}{figure.caption.20}%
+\contentsline {subsection}{3.4 Triển khai Mạng Ad-hoc}{20}{figure.caption.29}%
+\contentsline {section}{4. Minh chứng Video Demo}{21}{figure.caption.29}%
+\contentsline {subsection}{4.1 Link Video}{21}{figure.caption.29}%
+\contentsline {subsection}{4.2 Xác nhận hợp lệ}{21}{figure.caption.29}%
+\contentsline {subsection}{4.3 Checklist video}{21}{figure.caption.30}%
+\contentsline {section}{5. Lời Cảm Ơn \& Kết Luận}{22}{figure.caption.30}%
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{23}{chapter*.31}%

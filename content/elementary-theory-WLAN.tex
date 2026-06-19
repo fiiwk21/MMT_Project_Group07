@@ -79,18 +79,6 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
         Giao thức lớp ứng dụng chịu trách nhiệm tự động gán địa chỉ IP động cho các thiết bị đầu cuối ngay khi kết nối thành công.
     \end{itemize}
 
-    \item \textbf{Quy trình hoạt động:} 
-    \begin{itemize}
-        \item \textbf{Bước 1 (Phát sóng):} 
-        Cục AP liên tục phát ra các gói tin quảng bá (Beacon frames) mang theo định danh mạng (SSID như \texttt{25CLC10-N07}) ra không trung.
-        \item \textbf{Bước 2 (Dò mạng):} 
-        Card mạng của thiết bị đầu cuối bắt được sóng Beacon này và hiển thị tên mạng lên màn hình cho người dùng bấm chọn kết nối.
-        \item \textbf{Bước 3 (Xác thực):} 
-        Khi người dùng nhập mật khẩu, thiết bị và AP thực hiện giao thức xác thực WPA2-PSK nhằm bắt tay thiết lập một kênh truyền an toàn.
-        \item \textbf{Bước 4 (Nhận IP):} 
-        Sau khi kết nối thành công, thiết bị gửi tin nhắn xin IP, cục Router nhận được sẽ tự động gán địa chỉ IP động thông qua DHCP để thiết bị có thể lướt web.
-    \end{itemize}
-
     \item \textbf{Ưu điểm[4]:} 
     \begin{itemize}
         \item Khả năng mở rộng (Scalability) cao; người dùng dễ dàng thêm thiết bị mới vào mạng (chỉ cần nhập đúng mật khẩu) mà không gây ảnh hưởng đến các máy khác đang dùng.
@@ -124,16 +112,6 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
         Tiêu chuẩn quy định kiến trúc mạng không dây độc lập không có trạm gốc trung tâm.
         \item \textbf{Static IP / APIPA:} 
         Cơ chế tự gán địa chỉ IP nội bộ tạm thời (dải 169.254.x.x) hoặc nhập thủ công bằng tay để các máy nhận diện được nhau vì mạng không có giao thức DHCP cấp tự động.
-    \end{itemize}
-
-    \item \textbf{Quy trình hoạt động:} 
-    \begin{itemize}
-        \item \textbf{Bước 1 (Đồng bộ):} 
-        Các thiết bị đầu cuối khi tham gia mạng phải tự luân phiên nhau phát tín hiệu Beacon để đồng bộ hóa tần số sóng và thời gian giữa các máy.
-        \item \textbf{Bước 2 (Định tuyến):} 
-        Các nút mạng tự đóng vai trò làm bộ định tuyến, tự tìm đường và truyền thẳng gói tin sang card mạng của máy đích bằng sóng vô tuyến tầm ngắn.
-        \item \textbf{Bước 3 (Gán địa chỉ):} 
-        Người dùng cài đặt IP tĩnh cùng dải cho các máy (hoặc để máy tự sinh IP Link-Local) để thiết lập kết nối ở tầng mạng, giúp các thiết bị nhận diện và truyền dữ liệu cho nhau.
     \end{itemize}
 
     \item \textbf{Ưu điểm[4]:} 
