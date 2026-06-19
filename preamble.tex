@@ -1,0 +1,59 @@
+\setcounter{secnumdepth}{0}
+
+% --- Cấu hình ngôn ngữ & Font ---
+\usepackage[english, vietnamese]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc} 
+\usepackage{microtype} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18} 
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{caption}
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+
+% --- CẤU HÌNH CĂN LỀ ---
+\usepackage[left=3cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{tocloft}
+
+% --- Tùy chỉnh tiêu đề mục lục ---
+\renewcommand{\contentsname}{Mục lục}
+\renewcommand{\cftchappresnum}{Chương } 
+\renewcommand{\cftchapaftersnum}{:}
+\setlength{\cftchapnumwidth}{2.5cm}
+\setcounter{tocdepth}{3}
+
+% --- PACKAGES ---
+\usepackage{amsmath, amssymb}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\onehalfspacing
+\hypersetup{
+    unicode=true, 
+    colorlinks=true, 
+    linkcolor=blue, 
+    urlcolor=blue, 
+    hypertexnames=false
+}
+% --- ĐỊNH NGHĨA LẠI GIAO DIỆN CHƯƠNG ---
+\titleformat{\chapter}[display]
+{\normalfont\Huge\bfseries\raggedright}
+{\chaptername\ \thechapter:}
+{0.5em}
+{\huge\bfseries\raggedright}
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+
+\usepackage[ruled,vlined]{algorithm2e} 
+\SetKwProg{Fn}{Function}{}{end}
+\usepackage{chngcntr}
+\counterwithout{section}{chapter} 

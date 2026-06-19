@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.4)  19 JUN 2026 09:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.4)  19 JUN 2026 10:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -24,7 +24,11 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (C:\Users\Lam\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input line 2.
+
+(preamble.tex (C:\Users\Lam\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count284
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
@@ -860,9 +864,9 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 ) (C:\Users\Lam\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-Package hyperref Info: Option `unicode' set `true' on input line 48.
-Package hyperref Info: Option `colorlinks' set `true' on input line 48.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 48.
+Package hyperref Info: Option `unicode' set `true' on input line 47.
+Package hyperref Info: Option `colorlinks' set `true' on input line 47.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 47.
  (C:\Users\Lam\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count357
@@ -917,42 +921,42 @@ Package: relsize 2013/03/29 ver 4.1
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (report.aux
+)) (report.aux
 Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
 (babel)             Reported on input line 10.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Info: Redefining \microtypecontext on input line 62.
-Package microtype Info: Applying patch `item' on input line 62.
-Package microtype Info: Applying patch `toc' on input line 62.
-Package microtype Info: Applying patch `eqnum' on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Info: Redefining \microtypecontext on input line 4.
+Package microtype Info: Applying patch `item' on input line 4.
+Package microtype Info: Applying patch `toc' on input line 4.
+Package microtype Info: Applying patch `eqnum' on input line 4.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 62.
+Package microtype Warning: Unable to apply patch `footnote' on input line 4.
 
-Package microtype Info: Applying patch `verbatim' on input line 62.
-LaTeX Info: Redefining \microtypesetup on input line 62.
+Package microtype Info: Applying patch `verbatim' on input line 4.
+LaTeX Info: Redefining \microtypesetup on input line 4.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1023,10 +1027,10 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 62.
-[1
+Package hyperref Info: Link coloring ON on input line 4.
+(content/title.tex [1
 
-{C:/Users/Lam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (report.toc
+{C:/Users/Lam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (report.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (C:\Users\Lam\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1042,7 +1046,17 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
- [1] (report.lof)
+ [1] (report.lof
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 2.
+ (C:\Users\Lam\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T5/cmtt/m/n/12'. Switching off
+(microtype)                protrusion for this font on input line 2.
+
+)
 \tf@lof=\write5
 \openout5 = `report.lof'.
 
@@ -1052,17 +1066,36 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
  [2] (content/group-information.tex) [3
 
-] (content/elementary-theory-WLAN.tex) [4] (content/config-implementation.tex) [5] (content/video-demo-proof.tex
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 5.
- (C:\Users\Lam\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/cmtt/m/n/12'. Switching off
-(microtype)                protrusion for this font on input line 5.
-
-) [6] (content/acknowledgement.tex) [7] (content/reference.tex
+] (content/elementary-theory-WLAN.tex) [4] (content/config-implementation.tex
+<image/ipconfig.png, id=72, 664.28175pt x 446.8695pt>
+File: image/ipconfig.png Graphic file (type png)
+<use image/ipconfig.png>
+Package pdftex.def Info: image/ipconfig.png  used on input line 25.
+(pdftex.def)             Requested size: 364.19667pt x 245.00847pt.
+ [5 <./image/ipconfig.png>]
+<image/tem-router.jpg, id=81, 3011.25pt x 4015.0pt>
+File: image/tem-router.jpg Graphic file (type jpg)
+<use image/tem-router.jpg>
+Package pdftex.def Info: image/tem-router.jpg  used on input line 57.
+(pdftex.def)             Requested size: 318.66948pt x 424.86507pt.
+ [6 <./image/tem-router.jpg>]
+<image/login-router.png, id=87, 1196.47pt x 527.9725pt>
+File: image/login-router.png Graphic file (type png)
+<use image/login-router.png>
+Package pdftex.def Info: image/login-router.png  used on input line 83.
+(pdftex.def)             Requested size: 318.66948pt x 140.62099pt.
+<image/ssid-truoc-doi.png, id=88, 1028.84375pt x 502.87875pt>
+File: image/ssid-truoc-doi.png Graphic file (type png)
+<use image/ssid-truoc-doi.png>
+Package pdftex.def Info: image/ssid-truoc-doi.png  used on input line 98.
+(pdftex.def)             Requested size: 318.66948pt x 155.76035pt.
+ [7 <./image/login-router.png (PNG copy)>]
+<image/ssid-sau-doi.png, id=97, 1055.945pt x 517.935pt>
+File: image/ssid-sau-doi.png Graphic file (type png)
+<use image/ssid-sau-doi.png>
+Package pdftex.def Info: image/ssid-sau-doi.png  used on input line 107.
+(pdftex.def)             Requested size: 318.66948pt x 156.29845pt.
+) [8 <./image/ssid-truoc-doi.png (PNG copy)> <./image/ssid-sau-doi.png (PNG copy)>] (content/video-demo-proof.tex) [9] (content/acknowledgement.tex) [10] (content/reference.tex
 
 Package hyperref Warning: Glyph not defined in PU encoding,
 (hyperref)                removing `\ecircumflex' on input line 1.
@@ -1071,7 +1104,7 @@ Package hyperref Warning: Glyph not defined in PU encoding,
 Package hyperref Warning: Glyph not defined in PU encoding,
 (hyperref)                removing `\h' on input line 1.
 
-[8
+[11
 
 ] (report.aux)
  ***********
@@ -1080,17 +1113,17 @@ L3 programming layer <2025-12-24>
  ***********
  ) ) 
 Here is how much of TeX's memory you used:
- 38856 strings out of 467871
- 877787 string characters out of 5419345
- 1417124 words of memory out of 5000000
- 67005 multiletter control sequences out of 15000+600000
- 646607 words of font info for 115 fonts, out of 8000000 for 9000
+ 38969 strings out of 467871
+ 879866 string characters out of 5419345
+ 1417859 words of memory out of 5000000
+ 67064 multiletter control sequences out of 15000+600000
+ 648164 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,118p,1045b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Lam\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on report.pdf (9 pages, 119548 bytes).
+ 106i,10n,123p,1045b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Lam\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:/Users/Lam/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on report.pdf (12 pages, 4766755 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 32933 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 32958 words of extra memory for PDF output out of 35830 (max. 10000000)
 
