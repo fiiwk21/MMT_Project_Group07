@@ -213,5 +213,108 @@ với thông số đã nhập.
     \caption{Kết quả \texttt{ipconfig} xác nhận IP tĩnh được gán thành công}
     \label{fig:ipconfig-static}
 \end{figure}
+
+\subsubsection{3.3.2 Kết nối bằng Smartphone}
+
+Sau khi hoàn tất cấu hình SSID, nhóm tiến hành kiểm tra và kết nối thiết bị 
+Smartphone vào mạng \texttt{25CLC10-N07} theo cấp phát địa chỉ 
+IP tự động (DHCP).
+
+\textbf{Kiểm tra trạng thái trước khi kết nối:}
+Trước tiên, nhóm tắt hết WiFi và $4G$ của điện thoại để đảm bảo không có kết nối từ trước.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_no_wifi_4G.png}
+    \caption{Giao diện của điện thoại chưa kết nối WiFi và $4G$}
+    \label{fig:smartphone_no_wifi_4G}
+\end{figure}
+
+\textbf{Kết nối bằng IP động (DHCP):}
+Thiết bị được giữ nguyên ở chế độ \textit{Obtain an IP address automatically}. 
+Nhóm chọn SSID \texttt{25CLC10-N07} từ danh sách mạng Wi-Fi khả dụng, nhập mật 
+khẩu \texttt{1234567890a} và nhấn \textbf{Kết nối}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_connect_dhcp.png}
+    \caption{Chọn kết nối vào SSID \texttt{25CLC10-N07(2)}}
+    \label{fig:smartphone_connect_dhcp}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_connect_dhcp_password.png}
+    \caption{Nhập mật khẩu xác thực WPA2-PSK(2)}
+    \label{fig:smartphone_connect_dhcp_password}
+\end{figure}
+
+Sau khi xác thực thành công, 
+giao diện Wi-Fi hiển thị trạng thái đã kết nối với SSID mà nhóm đã thiết lập, 
+xác nhận thiết bị đã kết nối thành công vào mạng.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_connect_dhcp_success.png}
+    \caption{Trạng thái sau khi kết nối thành công qua DHCP}
+    \label{fig:smartphone_connect_dhcp_success}
+\end{figure}
+
+Giao diện quản trị Router ghi nhận thiết bị \texttt{Redmi-Note-9S} đã xuất hiện trong 
+danh sách với địa chỉ IP được cấp phát tự động là \texttt{192.168.1.5}, băng tần 
+2.4GHz, RSSI \texttt{-67 dBm} và địa chỉ MAC EA21:45:B9:3B:02.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_router_client_dhcp.png}
+    \caption{Router ghi nhận thiết bị \texttt{Redmi-Note-9S} kết nối thành công qua DHCP}
+    \label{fig:smartphone_router_client_dhcp}
+\end{figure}
+
+
+Để đảm bảo rằng đã điện thoại đã kết nối thành công vô SSID, nhóm kiểm tra thêm địa chỉ MAC.
+Nhóm vào lại phần cài đặt điện thoại, vô phần giới thiệu điện thoại.
+Tiếp theo là vô phần thông số chi tiết.
+Cuối cùng là vô phần trạng thái, 
+kéo xuống cuối cùng nhóm tìm được địa chỉ MAC của điện thoại (50:3D:C6:10:01:46).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_mac_address.png}
+    \caption{Địa chỉ MAC của thiết bị \texttt{Redmi-Note-9S}}
+    \label{fig:smartphone_mac_address}
+\end{figure}
+
+Nhóm chỉnh lại địa chỉ MAC mà WiFi điện thoại đang xài do địa chỉ MAC hiển thị trên Router khác với điện thoại.
+Nhóm vào lại phần cài đặt WiFi, bấm vô dấu mũi tên ở tên mạng,
+vô được phần thông tin của mạng.
+Ở phần này có thể chỉnh các thông số như cài đặt IP (DHCP hoặc tĩnh), Proxy và quyền riêng tư,
+bấm vào phần quyền riêng tư, chỉnh sử dụng MAC ngẫu nhiên sang MAC thiết bị.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_change_mac_address.png}
+    \caption{Thay đổi địa chỉ MAC}
+    \label{fig:smartphone_change_mac_address}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_correct_mac_address.png}
+    \caption{Thay đổi thành công địa chỉ MAC ngẫu nhiên sang MAC thiết bị}
+    \label{fig:smartphone_correct_mac_address}
+\end{figure}
+
+Nhóm vô lại giao diện Router, xác nhận địa chỉ MAC hiển thị trên Router đã chuyển sang MAC thiết bị,
+đảm bảo thiết bị đã kết nối thành công.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_correct_mac_address_router.png}
+    \caption{Địa chỉ MAC trên Router hiển thị MAC điện thoại}
+    \label{fig:smartphone_correct_mac_address_router}
+\end{figure}
+
+
 \subsection{3.4 Triển khai Mạng Ad-hoc}
 \textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành [Tên HĐH] không còn hỗ trợ tạo Ad-hoc trực tiếp, nhóm đã thực hiện cấu hình mạng Ad-hoc trên máy ảo.}

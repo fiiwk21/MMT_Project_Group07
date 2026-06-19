@@ -43,15 +43,37 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
 \subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}
 
 \begin{itemize}
+    \item \textbf{Khái niệm:} Mạng cơ sở hạ tầng (Infrastructure networks) là các mạng có cơ sở hạ tầng được định nghĩa trước và được cấu thành từ một số lượng cố định các nút mạng. 
+    Tại đây, các dịch vụ mạng được cung cấp thông qua các cơ sở hạ tầng đã được xây dựng từ trước. 
+    Trong mạng này, điểm truy cập (Access point) đóng vai trò là bộ điều khiển trung tâm cho mỗi thiết bị. 
+    Các điểm truy cập thực chất chính là các trạm cơ sở cố định được kết nối bằng dây cáp. 
+    Tất cả các thiết bị trong mạng không dây đều giao tiếp thông qua một bộ định tuyến (router), tức là điểm truy cập. 
+    Các ví dụ điển hình bao gồm mạng LAN không dây (Wireless LAN), mạng vệ tinh, v.v.
     \item \textbf{Ưu điểm:} 
-    \item \textbf{Nhược điểm:} 
+    \begin{itemize}
+        \item Tốc độ truyền mạng nhanh hơn mô hình Ad-hoc.
+        \item Tính bảo mật cao hơn mô hình Ad-hoc.
+    \end{itemize}
+    \item \textbf{Nhược điểm:}
+    \begin{itemize}
+        \item Chi phí lắp đặt tốn kém, gây nhiều hạn chế trong việc lắp đặt ở những nơi vùng sâu vùng xa, núi, đồi, \ldots.
+    \end{itemize}
 \end{itemize}
 
 \subsubsection{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)}
 
 \begin{itemize}
+    \item \textbf{Khái niệm:}Loại mạng này là một nhóm các thiết bị đầu cuối độc lập giao tiếp với nhau bằng cách hình thành một mạng vô tuyến. 
+    Các liên kết trong mạng không dây có băng thông thấp hơn so với các mạng có dây. 
+    Trong mạng này, mỗi nút mạng đóng vai trò như một bộ định tuyến, và kết nối mạng được phân phối giữa các nút với nhau. 
+    Trong một mạng tùy biến (ad-hoc network), việc hình thành mạng diễn ra một cách linh hoạt (động) nhờ vào sự hợp tác giữa các nút ngẫu nhiên. 
+    Các ví dụ về mạng không có cơ sở hạ tầng bao gồm Mạng cảm biến không dây (WSN) và Mạng di động tùy biến (MANET).
     \item \textbf{Ưu điểm:} 
     \item \textbf{Nhược điểm:} 
+    \begin{itemize}
+        \item Tốc độ truyền mạng chậm hơn mô hình Infrastructure.
+        \item Tính bảo mật thấp hơn mô hình Infrastructure.
+    \end{itemize}
 \end{itemize}
 
 \subsubsection{2.3.3 Giải pháp kết nối cho thiết bị đầu cuối}
