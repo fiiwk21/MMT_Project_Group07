@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1782128069.54626 "d:/HCMUS/HK3-NAMNHAT/MANG_MAY_TINH/Project/REPORT/report.tex" "report.pdf" "report" 1782128071.40667 0
+["pdflatex"] 1782131942.8406 "d:/HCMUS/HK3-NAMNHAT/MANG_MAY_TINH/Project/REPORT/report.tex" "report.pdf" "report" 1782131944.71149 0
   "C:/Users/Dell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1781519771 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/Dell/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1781516346 14064 ad45fa3217496ea263ab5f1518f2e12a ""
   "C:/Users/Dell/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1781520734 13316649 b310ce51e9937a4e6d8632b764ad4e5e ""
@@ -245,12 +245,13 @@
   "content/elementary-theory-WLAN.tex" 1782126319 10831 6b874a18130931cf42d80081f7f55ffa ""
   "content/group-information.tex" 1782128067 1016 8319daae28104781f014ec2e893b3c99 ""
   "content/reference.tex" 1782126319 910 b9430d8d6fd9456a622542c6d4bd7883 ""
-  "content/title.tex" 1781870039 927 6c8930cf2582c9ca74f0046772766c6b ""
+  "content/title.tex" 1782131942 1789 088f6d9a6dbd657d67a1eaa580430ade ""
   "content/video-demo-proof.tex" 1781870039 1275 a2d67ee2030604c8b24fa2073a465eaf ""
   "d:/HCMUS/HK3-NAMNHAT/MANG_MAY_TINH/Project/REPORT/report.tex" 1781870039 2175 9c8b38cc2adfbf63b2a79cd2f24fe008 ""
   "image/connect-dhcp-click.png" 1781870039 27958 47083b6795ad73a50bee340d6ef44a32 ""
   "image/connect-dhcp-password.png" 1781870039 87578 ce06b16b72fb5067c026a4df247916f2 ""
   "image/connect-dhcp-success.png" 1781870039 29631 8b9a9b8c9303105036224eaa3c57ee85 ""
+  "image/hcmus_logo.jpg" 1782128527 21024 f06d4fe9f52d4a8abe7f6aa08ebd3e5f ""
   "image/ipconfig-static.png" 1781870039 110676 a8b33b9c7aca49550fc10917c013e192 ""
   "image/ipconfig.png" 1781870039 367796 0812e0241abddcdee67683cbde60d60e ""
   "image/login-router.png" 1781870039 86910 890f97c90ae181bc6fbab37013d41b64 ""
@@ -270,11 +271,11 @@
   "image/static-ip-config.png" 1781870039 66652 f0972e7254f26e3e356d834a6d97ff51 ""
   "image/tem-router.jpg" 1781870039 4062433 76efd3ed10df3599360fda175f03b66e ""
   "preamble.tex" 1781870039 1546 253f3ab6593fa0b64a8a4753e350eb83 ""
-  "report.aux" 1782128071 20796 c20e3eee907cfdf6a3f952bb26486618 "pdflatex"
-  "report.lof" 1782128071 3411 3f5b3913f94f395d8d293b08f49c8ab0 "pdflatex"
-  "report.lot" 1782128071 424 1d8640610c017dcddf05ba6319b2d6cd "pdflatex"
+  "report.aux" 1782131944 20797 f0c7a09c79dcc340bcf573168ba53e66 "pdflatex"
+  "report.lof" 1782131944 3411 3f5b3913f94f395d8d293b08f49c8ab0 "pdflatex"
+  "report.lot" 1782131944 424 1d8640610c017dcddf05ba6319b2d6cd "pdflatex"
   "report.tex" 1781870039 2175 9c8b38cc2adfbf63b2a79cd2f24fe008 ""
-  "report.toc" 1782128071 1908 3af15590a4397654ff040b7d7730d55f "pdflatex"
+  "report.toc" 1782131944 1908 3af15590a4397654ff040b7d7730d55f "pdflatex"
   (generated)
   "report.aux"
   "report.lof"

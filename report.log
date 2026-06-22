@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.15)  22 JUN 2026 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.15)  22 JUN 2026 19:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1028,9 +1028,15 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 4.
-(content/title.tex [1
+(content/title.tex
+<image/hcmus_logo.jpg, id=6, 448.67625pt x 448.67625pt>
+File: image/hcmus_logo.jpg Graphic file (type jpg)
+<use image/hcmus_logo.jpg>
+Package pdftex.def Info: image/hcmus_logo.jpg  used on input line 25.
+(pdftex.def)             Requested size: 179.46732pt x 179.46732pt.
+ [1
 
-{C:/Users/Dell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (report.toc
+{C:/Users/Dell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image/hcmus_logo.jpg>]) (report.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (D:\miktex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1067,117 +1073,117 @@ Package microtype Warning: I cannot find a protrusion list for font
  [3] (content/group-information.tex) [4
 
 ] (content/elementary-theory-WLAN.tex [5] [6] [7]) [8] (content/config-implementation.tex
-<image/ipconfig.png, id=127, 664.28175pt x 446.8695pt>
+<image/ipconfig.png, id=128, 664.28175pt x 446.8695pt>
 File: image/ipconfig.png Graphic file (type png)
 <use image/ipconfig.png>
 Package pdftex.def Info: image/ipconfig.png  used on input line 25.
 (pdftex.def)             Requested size: 364.19667pt x 245.00847pt.
  [9 <./image/ipconfig.png>]
-<image/tem-router.jpg, id=134, 3011.25pt x 4015.0pt>
+<image/tem-router.jpg, id=135, 3011.25pt x 4015.0pt>
 File: image/tem-router.jpg Graphic file (type jpg)
 <use image/tem-router.jpg>
 Package pdftex.def Info: image/tem-router.jpg  used on input line 57.
 (pdftex.def)             Requested size: 318.66948pt x 424.86507pt.
  [10 <./image/tem-router.jpg>]
-<image/login-router.png, id=139, 1196.47pt x 527.9725pt>
+<image/login-router.png, id=140, 1196.47pt x 527.9725pt>
 File: image/login-router.png Graphic file (type png)
 <use image/login-router.png>
 Package pdftex.def Info: image/login-router.png  used on input line 83.
 (pdftex.def)             Requested size: 318.66948pt x 140.62099pt.
-<image/ssid-truoc-doi.png, id=140, 1028.84375pt x 502.87875pt>
+<image/ssid-truoc-doi.png, id=141, 1028.84375pt x 502.87875pt>
 File: image/ssid-truoc-doi.png Graphic file (type png)
 <use image/ssid-truoc-doi.png>
 Package pdftex.def Info: image/ssid-truoc-doi.png  used on input line 98.
 (pdftex.def)             Requested size: 318.66948pt x 155.76035pt.
  [11 <./image/login-router.png (PNG copy)>]
-<image/ssid-sau-doi.png, id=149, 1055.945pt x 517.935pt>
+<image/ssid-sau-doi.png, id=150, 1055.945pt x 517.935pt>
 File: image/ssid-sau-doi.png Graphic file (type png)
 <use image/ssid-sau-doi.png>
 Package pdftex.def Info: image/ssid-sau-doi.png  used on input line 107.
 (pdftex.def)             Requested size: 318.66948pt x 156.29845pt.
-<image/router-no-device.png, id=150, 832.61063pt x 96.36pt>
+<image/router-no-device.png, id=151, 832.61063pt x 96.36pt>
 File: image/router-no-device.png Graphic file (type png)
 <use image/router-no-device.png>
 Package pdftex.def Info: image/router-no-device.png  used on input line 128.
 (pdftex.def)             Requested size: 364.19667pt x 42.15002pt.
  [12 <./image/ssid-truoc-doi.png (PNG copy)> <./image/ssid-sau-doi.png (PNG copy)>]
-<image/connect-dhcp-click.png, id=157, 893.58844pt x 118.19156pt>
+<image/connect-dhcp-click.png, id=158, 893.58844pt x 118.19156pt>
 File: image/connect-dhcp-click.png Graphic file (type png)
 <use image/connect-dhcp-click.png>
 Package pdftex.def Info: image/connect-dhcp-click.png  used on input line 140.
 (pdftex.def)             Requested size: 364.19667pt x 48.17209pt.
-<image/connect-dhcp-password.png, id=158, 899.61093pt x 188.20313pt>
+<image/connect-dhcp-password.png, id=159, 899.61093pt x 188.20313pt>
 File: image/connect-dhcp-password.png Graphic file (type png)
 <use image/connect-dhcp-password.png>
 Package pdftex.def Info: image/connect-dhcp-password.png  used on input line 147.
 (pdftex.def)             Requested size: 364.19667pt x 76.19025pt.
-<image/connect-dhcp-success.png, id=159, 898.10532pt x 112.92188pt>
+<image/connect-dhcp-success.png, id=160, 898.10532pt x 112.92188pt>
 File: image/connect-dhcp-success.png Graphic file (type png)
 <use image/connect-dhcp-success.png>
 Package pdftex.def Info: image/connect-dhcp-success.png  used on input line 157.
 (pdftex.def)             Requested size: 364.19667pt x 45.79169pt.
-<image/router-client-dhcp.png, id=160, 1188.69093pt x 158.84344pt>
+<image/router-client-dhcp.png, id=161, 1188.69093pt x 158.84344pt>
 File: image/router-client-dhcp.png Graphic file (type png)
 <use image/router-client-dhcp.png>
 Package pdftex.def Info: image/router-client-dhcp.png  used on input line 168.
 (pdftex.def)             Requested size: 364.19667pt x 48.66652pt.
  [13 <./image/router-no-device.png> <./image/connect-dhcp-click.png> <./image/connect-dhcp-password.png> <./image/connect-dhcp-success.png> <./image/router-client-dhcp.png>]
-<image/static-ip-config.png, id=171, 471.26062pt x 581.17125pt>
+<image/static-ip-config.png, id=172, 471.26062pt x 581.17125pt>
 File: image/static-ip-config.png Graphic file (type png)
 <use image/static-ip-config.png>
 Package pdftex.def Info: image/static-ip-config.png  used on input line 200.
 (pdftex.def)             Requested size: 227.62206pt x 280.71487pt.
-<image/ipconfig-static.png, id=172, 1088.56688pt x 178.41656pt>
+<image/ipconfig-static.png, id=173, 1088.56688pt x 178.41656pt>
 File: image/ipconfig-static.png Graphic file (type png)
 <use image/ipconfig-static.png>
 Package pdftex.def Info: image/ipconfig-static.png  used on input line 212.
 (pdftex.def)             Requested size: 364.19667pt x 59.69164pt.
-<image/smartphone_no_wifi_4G.png, id=173, 187.29974pt x 190.311pt>
+<image/smartphone_no_wifi_4G.png, id=174, 187.29974pt x 190.311pt>
 File: image/smartphone_no_wifi_4G.png Graphic file (type png)
 <use image/smartphone_no_wifi_4G.png>
 Package pdftex.def Info: image/smartphone_no_wifi_4G.png  used on input line 228.
 (pdftex.def)             Requested size: 364.19667pt x 370.08565pt.
  [14 <./image/static-ip-config.png> <./image/ipconfig-static.png>]
-<image/smartphone_connect_dhcp.png, id=180, 263.18324pt x 201.75375pt>
+<image/smartphone_connect_dhcp.png, id=181, 263.18324pt x 201.75375pt>
 File: image/smartphone_connect_dhcp.png Graphic file (type png)
 <use image/smartphone_connect_dhcp.png>
 Package pdftex.def Info: image/smartphone_connect_dhcp.png  used on input line 240.
 (pdftex.def)             Requested size: 364.19667pt x 279.21472pt.
  [15 <./image/smartphone_no_wifi_4G.png>]
-<image/smartphone_connect_dhcp_password.png, id=186, 296.307pt x 187.902pt>
+<image/smartphone_connect_dhcp_password.png, id=187, 296.307pt x 187.902pt>
 File: image/smartphone_connect_dhcp_password.png Graphic file (type png)
 <use image/smartphone_connect_dhcp_password.png>
 Package pdftex.def Info: image/smartphone_connect_dhcp_password.png  used on input line 247.
 (pdftex.def)             Requested size: 364.19667pt x 230.97185pt.
-<image/smartphone_connect_dhcp_success.png, id=187, 326.4195pt x 118.64325pt>
+<image/smartphone_connect_dhcp_success.png, id=188, 326.4195pt x 118.64325pt>
 File: image/smartphone_connect_dhcp_success.png Graphic file (type png)
 <use image/smartphone_connect_dhcp_success.png>
 Package pdftex.def Info: image/smartphone_connect_dhcp_success.png  used on input line 258.
 (pdftex.def)             Requested size: 364.19667pt x 132.37805pt.
  [16 <./image/smartphone_connect_dhcp.png> <./image/smartphone_connect_dhcp_password.png>]
-<image/smartphone_router_client_dhcp.png, id=194, 852.786pt x 118.64325pt>
+<image/smartphone_router_client_dhcp.png, id=195, 852.786pt x 118.64325pt>
 File: image/smartphone_router_client_dhcp.png Graphic file (type png)
 <use image/smartphone_router_client_dhcp.png>
 Package pdftex.def Info: image/smartphone_router_client_dhcp.png  used on input line 269.
 (pdftex.def)             Requested size: 364.19667pt x 50.668pt.
-<image/smartphone_mac_address.png, id=195, 205.9695pt x 208.98074pt>
+<image/smartphone_mac_address.png, id=196, 205.9695pt x 208.98074pt>
 File: image/smartphone_mac_address.png Graphic file (type png)
 <use image/smartphone_mac_address.png>
 Package pdftex.def Info: image/smartphone_mac_address.png  used on input line 283.
 (pdftex.def)             Requested size: 364.19667pt x 369.5196pt.
  [17 <./image/smartphone_connect_dhcp_success.png> <./image/smartphone_router_client_dhcp.png>]
-<image/smartphone_change_mac_address.png, id=202, 269.20575pt x 193.9245pt>
+<image/smartphone_change_mac_address.png, id=203, 269.20575pt x 193.9245pt>
 File: image/smartphone_change_mac_address.png Graphic file (type png)
 <use image/smartphone_change_mac_address.png>
 Package pdftex.def Info: image/smartphone_change_mac_address.png  used on input line 296.
 (pdftex.def)             Requested size: 364.19667pt x 262.36673pt.
  [18 <./image/smartphone_mac_address.png>]
-<image/smartphone_correct_mac_address.png, id=209, 266.1945pt x 169.23225pt>
+<image/smartphone_correct_mac_address.png, id=210, 266.1945pt x 169.23225pt>
 File: image/smartphone_correct_mac_address.png Graphic file (type png)
 <use image/smartphone_correct_mac_address.png>
 Package pdftex.def Info: image/smartphone_correct_mac_address.png  used on input line 303.
 (pdftex.def)             Requested size: 364.19667pt x 231.54208pt.
-<image/smartphone_correct_mac_address_router.png, id=210, 849.1725pt x 123.46124pt>
+<image/smartphone_correct_mac_address_router.png, id=211, 849.1725pt x 123.46124pt>
 File: image/smartphone_correct_mac_address_router.png Graphic file (type png)
 <use image/smartphone_correct_mac_address_router.png>
 Package pdftex.def Info: image/smartphone_correct_mac_address_router.png  used on input line 313.
@@ -1215,17 +1221,17 @@ L3 programming layer <2025-12-24>
  ***********
  ) ) 
 Here is how much of TeX's memory you used:
- 39186 strings out of 467871
- 870135 string characters out of 5435214
- 1424481 words of memory out of 5000000
- 67199 multiletter control sequences out of 15000+600000
- 649567 words of font info for 160 fonts, out of 8000000 for 9000
+ 39208 strings out of 467871
+ 870593 string characters out of 5435214
+ 1424483 words of memory out of 5000000
+ 67217 multiletter control sequences out of 15000+600000
+ 650600 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,10n,123p,1053b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Dell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/miktex/fonts/type1/vntex/vnr/vnbx12.pfb><D:/miktex/fonts/type1/vntex/vnr/vnr12.pfb><D:/miktex/fonts/type1/vntex/vnr/vnti12.pfb><D:/miktex/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on report.pdf (24 pages, 6447536 bytes).
+Output written on report.pdf (24 pages, 6471049 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
+ 357 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)
- 33054 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 35107 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -376,10 +376,17 @@ INPUT .\content\title.tex
 INPUT content\title.tex
 INPUT D:\miktex\fonts\tfm\vntex\vnr\vnr12.tfm
 INPUT D:\miktex\fonts\tfm\vntex\vnr\vnbx12.tfm
+INPUT .\image\hcmus_logo.jpg
+INPUT .\image\hcmus_logo.jpg
+INPUT .\image\hcmus_logo.jpg
+INPUT .\image\hcmus_logo.jpg
+INPUT .\image\hcmus_logo.jpg
+INPUT .\image\hcmus_logo.jpg
+INPUT .\image\hcmus_logo.jpg
 INPUT D:\miktex\fonts\tfm\vntex\vnr\vnr17.tfm
 INPUT D:\miktex\fonts\tfm\vntex\vnr\vnbx12.tfm
-INPUT D:\miktex\fonts\tfm\vntex\vnr\vnr17.tfm
 INPUT D:\miktex\fonts\tfm\vntex\vnr\vnbx12.tfm
+INPUT D:\miktex\fonts\tfm\vntex\vnr\vnti12.tfm
 INPUT C:\Users\Dell\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\report.toc
 INPUT .\report.toc
@@ -413,7 +420,6 @@ INPUT D:\miktex\tex\latex\microtype\mt-msb.cfg
 INPUT D:\miktex\tex\latex\microtype\mt-msb.cfg
 INPUT D:\miktex\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT D:\miktex\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT D:\miktex\fonts\tfm\vntex\vnr\vnbx12.tfm
 OUTPUT report.toc
 INPUT .\report.lof
 INPUT .\report.lof
@@ -431,6 +437,8 @@ OUTPUT report.lot
 INPUT .\content\group-information.tex
 INPUT .\content\group-information.tex
 INPUT content\group-information.tex
+INPUT D:\miktex\fonts\tfm\vntex\vnr\vnr17.tfm
+INPUT D:\miktex\fonts\tfm\vntex\vnr\vnbx12.tfm
 INPUT .\content\elementary-theory-WLAN.tex
 INPUT .\content\elementary-theory-WLAN.tex
 INPUT content\elementary-theory-WLAN.tex
