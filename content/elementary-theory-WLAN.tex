@@ -50,80 +50,96 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
 
 \subsection{2.3 Mô hình triển khai và Giải pháp kết nối}
 
-\subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)[1]}
+\subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}
 
 \begin{itemize}
-    \item \textbf{Khái niệm:} 
-    Loại mạng này hoạt động theo mô hình quản lý tập trung, 
-    trong đó mọi dữ liệu và gói tin bắt buộc phải truyền qua một thiết bị điều khiển trung gian chứ các thiết bị đầu cuối không nói chuyện trực tiếp với nhau. 
-    Mô hình này thường được lắp đặt cố định để phục vụ kết nối lâu dài,
-    ví dụ như mạng Wi-Fi gia đình, văn phòng, giảng đường đại học, \ldots.
-    
-    \item \textbf{Thành phần:} 
+    \item \textbf{Khái niệm:}
+    \begin{itemize}
+        \item Mọi gói tin đều phải đi qua một thiết bị trung gian là Access Point (AP) 
+        hoặc Router, các thiết bị đầu cuối không giao tiếp trực tiếp với nhau~\cite{ref1}.
+        \item Thường được lắp đặt cố định để phục vụ lâu dài: mạng Wi-Fi gia đình, 
+        văn phòng, giảng đường đại học, \ldots
+    \end{itemize}
+
+    \item \textbf{Thành phần chính~\cite{ref1}:}
     \begin{itemize}
         \item \textbf{Access Point (AP) / Router Wi-Fi:} 
-        Thiết bị trung tâm đóng vai trò làm trạm gốc để quản lý, điều phối và trung chuyển mọi dữ liệu trong mạng.
-        \item \textbf{Thiết bị đầu cuối (Stations - STA)}: 
-        Các máy trạm của người dùng như Smartphone, Laptop, PC có trang bị card mạng không dây để thu phát sóng.
-        \item \textbf{Mạng xương sống (Wired Infrastructure):} 
-        Hệ thống dây cáp mạng mạng (Ethernet) dùng để kết nối các cục AP lại với nhau và kết nối ra Internet toàn cầu.
+        Thiết bị trung tâm điều phối toàn bộ lưu lượng trong mạng.
+        \item \textbf{Thiết bị đầu cuối (Stations -- STA):} 
+        Laptop, smartphone, PC có trang bị card mạng không dây.
+        \item \textbf{Hạ tầng cáp có dây (Wired Backbone):} 
+        Cáp Ethernet nối các AP lại với nhau và kết nối ra Internet.
     \end{itemize}
 
-    \item \textbf{Giao thức áp dụng:} 
+    \item \textbf{Giao thức áp dụng:}
     \begin{itemize}
-        \item \textbf{IEEE 802.11 (Wi-Fi):} 
-        Tập tiêu chuẩn cốt lõi quy định cách thức truyền và nhận dữ liệu qua sóng vô tuyến lớp vật lý.
+        \item \textbf{IEEE 802.11:} 
+        Tiêu chuẩn quy định cách truyền nhận dữ liệu qua sóng vô tuyến ở lớp vật lý~\cite{ref3}.
         \item \textbf{WPA2-PSK (AES):} 
-        Giao thức bảo mật dùng để kiểm tra mật khẩu (Pre-Shared Key) và mã hóa dữ liệu lớp 2 nhằm chống lại việc nghe lén.
+        Xác thực mật khẩu và mã hóa dữ liệu lớp 2~\cite{ref1}.
         \item \textbf{DHCP:} 
-        Giao thức lớp ứng dụng chịu trách nhiệm tự động gán địa chỉ IP động cho các thiết bị đầu cuối ngay khi kết nối thành công.
+        Tự động cấp địa chỉ IP cho thiết bị khi kết nối~\cite{ref1}.
     \end{itemize}
 
-    \item \textbf{Ưu điểm[4]:} 
+    \item \textbf{Ưu điểm~\cite{ref1,ref4}:}
     \begin{itemize}
-        \item Khả năng mở rộng (Scalability) cao; người dùng dễ dàng thêm thiết bị mới vào mạng (chỉ cần nhập đúng mật khẩu) mà không gây ảnh hưởng đến các máy khác đang dùng.
-        \item Tính bảo mật và quản lý cao vì cục AP dễ dàng thiết lập mật khẩu mã hóa mạnh, cài đặt tường lửa và kiểm soát được danh sách các máy đang truy cập.
+        \item Dễ mở rộng: thêm thiết bị mới chỉ cần nhập đúng mật khẩu.
+        \item Bảo mật và quản lý tốt: có thể cấu hình tường lửa, 
+        mật khẩu mã hóa và kiểm soát danh sách thiết bị truy cập trên Router.
     \end{itemize}
 
-    \item \textbf{Nhược điểm[4]:} 
+    \item \textbf{Nhược điểm~\cite{ref1,ref4}:}
     \begin{itemize}
-        \item Tốn chi phí đầu tư phần cứng ban đầu tương đối cao bao gồm tiền mua cục Router, Access Point, switch và hệ thống dây cáp mạng mạng.
-        \item Gặp rủi ro lỗi điểm đơn duy nhất (Single Point of Failure); toàn bộ hệ thống mạng sẽ sập hoàn toàn nếu thiết bị điều khiển trung tâm (Router/AP) bị hỏng hoặc mất nguồn điện.
+        \item Chi phí đầu tư ban đầu cao: phải mua Router, AP, switch 
+        và hệ thống cáp Ethernet.
+        \item Rủi ro \textit{Single Point of Failure}: nếu Router trung tâm 
+        hỏng hoặc mất điện thì toàn bộ mạng ngừng hoạt động.
     \end{itemize}
 \end{itemize}
 
 
-\subsubsection{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)[1]}
+\subsubsection{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)}
 
 \begin{itemize}
-    \item \textbf{Khái niệm:} 
-    Loại mạng này là một nhóm các thiết bị đầu cuối độc lập giao tiếp với nhau bằng cách hình thành một mạng vô tuyến mang tính chất tạm thời, tự phát ngay lập tức khi cần (on-the-fly) giữa các thiết bị ở gần nhau mà không cần chuẩn bị trước hạ tầng Router. 
-    Các ví dụ về mạng không có cơ sở hạ tầng bao gồm AirDrop, Quick Share, Mạng cảm biến không dây (WSN) và Mạng di động tùy biến (MANET).
-    
-    \item \textbf{Thành phần:} 
+    \item \textbf{Khái niệm:}
     \begin{itemize}
-        \item Chỉ bao gồm các thiết bị đầu cuối của người dùng (như Laptop, Smartphone) tự kết nối trực tiếp với nhau (Peer-to-Peer).
-        \item Hoàn toàn không có sự xuất hiện của các thiết bị trung gian quản lý như Access Point hay Router Wi-Fi.
+        \item Các thiết bị kết nối thẳng với nhau theo kiểu ngang hàng 
+        (Peer-to-Peer), hình thành mạng tạm thời mà không cần 
+        chuẩn bị hạ tầng trước~\cite{ref1}.
+        \item Một số ứng dụng thực tế: AirDrop, Quick Share, 
+        mạng cảm biến không dây (WSN), mạng di động tùy biến (MANET).
     \end{itemize}
 
-    \item \textbf{Giao thức áp dụng:} 
+    \item \textbf{Thành phần chính~\cite{ref1}:}
     \begin{itemize}
-        \item \textbf{IEEE 802.11 (IBSS):} 
-        Tiêu chuẩn quy định kiến trúc mạng không dây độc lập không có trạm gốc trung tâm.
+        \item Chỉ gồm các thiết bị đầu cuối tự liên kết trực tiếp với nhau.
+        \item Không có AP hay Router trung gian.
+    \end{itemize}
+
+    \item \textbf{Giao thức áp dụng:}
+    \begin{itemize}
+        \item \textbf{IEEE 802.11 (chế độ IBSS):} 
+        Quy định kiến trúc mạng không dây độc lập, không có trạm gốc~\cite{ref3}.
         \item \textbf{Static IP / APIPA:} 
-        Cơ chế tự gán địa chỉ IP nội bộ tạm thời (dải 169.254.x.x) hoặc nhập thủ công bằng tay để các máy nhận diện được nhau vì mạng không có giao thức DHCP cấp tự động.
+        Các máy phải gán địa chỉ IP thủ công hoặc dùng APIPA 
+        tự cấp địa chỉ tạm thời trong dải 169.254.x.x 
+        do không có DHCP~\cite{ref1}.
     \end{itemize}
 
-    \item \textbf{Ưu điểm[4]:} 
+    \item \textbf{Ưu điểm~\cite{ref1,ref4}:}
     \begin{itemize}
-        \item Rất rẻ và tiện lợi vì không tốn chi phí mua sắm thiết bị phần cứng như cục Router, AP hay dây cáp mạng, có thể tự thiết lập mọi lúc mọi nơi.
-        \item Độ bền bỉ cao và không sợ bị sập toàn bộ mạng; nếu một máy bị tắt nguồn hay rời đi thì các máy còn lại vẫn giữ kết nối và liên lạc bình thường.
+        \item Không tốn chi phí phần cứng, triển khai nhanh ở bất kỳ đâu.
+        \item Không bị sập toàn bộ: một máy rời mạng thì 
+        các máy còn lại vẫn duy trì kết nối bình thường.
     \end{itemize}
 
-    \item \textbf{Nhược điểm[4]:} 
+    \item \textbf{Nhược điểm~\cite{ref1,ref4}:}
     \begin{itemize}
-        \item Tốc độ truyền mạng chậm hơn mô hình Infrastructure; nếu có quá nhiều máy cùng kết nối sẽ gây ra hiện tượng nhiễu sóng, xung đột gói tin và làm mạng bị nghẽn mạch.
-        \item Tính bảo mật thấp hơn mô hình Infrastructure vì không có thiết bị trung tâm quản lý, người lạ rất dễ lẻn vào mạng hoặc nghe lén dữ liệu truyền qua không trung.
+        \item Hiệu năng giảm khi có nhiều thiết bị: băng thông bị chia sẻ,
+        dễ xảy ra nhiễu sóng và xung đột gói tin; 
+        mỗi máy còn phải tự xử lý định tuyến nên tốn tài nguyên hệ thống hơn.
+        \item Bảo mật kém hơn mô hình Infrastructure do không có 
+        thiết bị trung tâm kiểm soát truy cập.
     \end{itemize}
 \end{itemize}
 
