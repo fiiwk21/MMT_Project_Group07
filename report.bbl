@@ -18,28 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{geeksforgeeks2023}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=f1e069787ece74531d112559945c6871}{%
-           family={{GeeksforGeeks}},
-           familyi={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{f1e069787ece74531d112559945c6871}
-      \strng{fullhash}{f1e069787ece74531d112559945c6871}
-      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
-      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
-      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
-      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\textit{GeeksforGeeks}}
-      \field{note}{[Online]. Available: \url{https://www.geeksforgeeks.org/difference-between-infrastructure-and-infrastructure-less-network/}}
-      \field{title}{Difference between Infrastructure and Infrastructure-less Network}
-      \field{year}{2023}
-    \endentry
+  \datalist[entry]{none/global//global/global}
     \entry{kurose2017}{book}{}
       \name{author}{2}{}{%
         {{hash=f7e2a538f9154730045515525a52bb35}{%
@@ -62,8 +41,8 @@
       \strng{authorbibnamehash}{7af9d40c3e74f82452e1c82d887d7fb0}
       \strng{authornamehash}{7af9d40c3e74f82452e1c82d887d7fb0}
       \strng{authorfullhash}{7af9d40c3e74f82452e1c82d887d7fb0}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{7th}
@@ -92,16 +71,61 @@
       \strng{authorbibnamehash}{41d507fa0d7aa752065375344f580b25}
       \strng{authornamehash}{41d507fa0d7aa752065375344f580b25}
       \strng{authorfullhash}{41d507fa0d7aa752065375344f580b25}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{5th}
       \field{title}{Computer Networks}
       \field{year}{2010}
     \endentry
+    \entry{ieee80211}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6b600542ba3d4a21aea8e7d8ee988932}{%
+           family={{IEEE Computer Society}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b600542ba3d4a21aea8e7d8ee988932}
+      \strng{fullhash}{6b600542ba3d4a21aea8e7d8ee988932}
+      \strng{bibnamehash}{6b600542ba3d4a21aea8e7d8ee988932}
+      \strng{authorbibnamehash}{6b600542ba3d4a21aea8e7d8ee988932}
+      \strng{authornamehash}{6b600542ba3d4a21aea8e7d8ee988932}
+      \strng{authorfullhash}{6b600542ba3d4a21aea8e7d8ee988932}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Std 802.11-2020 (Revision of IEEE Std 802.11-2016)}
+      \field{title}{IEEE Standard for Information technology - Telecommunications and information exchange between systems Local and metropolitan area networks - Specific requirements - Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 4379}
+      \range{pages}{4379}
+      \verb{doi}
+      \verb 10.1109/IEEESTD.2021.9363693
+      \endverb
+    \endentry
+    \entry{geeksforgeeks2023}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GeeksforGeeks Portal}
+      \field{note}{[Online]. Available: \url{https://www.geeksforgeeks.org/difference-between-infrastructure-and-infrastructure-less-network/}}
+      \field{title}{Difference between Infrastructure and Infrastructure-less Network}
+      \field{year}{2023}
+    \endentry
   \enddatalist
-  \missing{10979691}
 \endrefsection
 \endinput
 
