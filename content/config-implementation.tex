@@ -351,12 +351,12 @@ Kết quả kiểm tra cho thấy, card mạng không dây của máy thật (In
 Hosted network supported : No
 \end{verbatim}
 
-% \begin{figure}[H]
-%     \centering
+\begin{figure}[H]
+    \centering
      \includegraphics[width=0.85\textwidth]{image/cmd_hosted_network_no.png}
-%     \caption{Kết quả kiểm tra lệnh netsh wlan show drivers cho thấy Hosted network không được hỗ trợ}
-%     \label{fig:hosted_network_no}
-% \end{figure}
+    \caption{Kết quả kiểm tra lệnh netsh wlan show drivers cho thấy Hosted network không được hỗ trợ}
+    \label{fig:hosted_network_no}
+ \end{figure}
 
 Nguyên nhân của lỗi này là do các bản cập nhật Windows đời mới và driver của các dòng card mạng hiện đại đã loại bỏ tính năng Soft AP (Hosted network). Do đó, nhóm không thể thiết lập mạng Ad-hoc trực tiếp trên phần cứng của máy tính thật.
 
@@ -373,12 +373,12 @@ Quá trình thiết lập mạng ảo được thực hiện như sau:
     \item Ở cấu hình này, các máy ảo sẽ được cấp phát địa chỉ IP chung một dải mạng (ví dụ: \texttt{192.168.140.0}). Chế độ Host-only cho phép các máy ảo kết nối và trao đổi dữ liệu trực tiếp với nhau trong một môi trường cô lập mà không cần phải đi qua mạng vật lý bên ngoài, mô phỏng đúng tính chất của kết nối Ad-hoc nội bộ.
 \end{itemize}
 
-% \begin{figure}[H]
-%     \centering
+ \begin{figure}[H]
+     \centering
      \includegraphics[width=0.85\textwidth]{image/vmware_virtual_network_editor.png}
-%     \caption{Cấu hình mạng ảo VMnet1 (Host-only) trong Virtual Network Editor}
-%     \label{fig:vmware_network_editor}
-% \end{figure}
+     \caption{Cấu hình mạng ảo VMnet1 (Host-only) trong Virtual Network Editor}
+     \label{fig:vmware_network_editor}
+ \end{figure}
 
 Ghi nhận về sự ưu thế khi sử dụng VMware Workstation trong bài toán này:
 \begin{itemize}
