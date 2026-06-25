@@ -315,14 +315,13 @@ Nhóm vô lại giao diện Router, xác nhận địa chỉ MAC hiển thị tr
     \label{fig:smartphone_correct_mac_address_router}
 \end{figure}
 
-
 % ══════════════════════════════════════════════════════════════════════════════
-% MỤC 3.4 — Triển khai mạng Ad-hoc và giải pháp sử dụng máy ảo VMware
+% MỤC 3.4 — Triển khai mạng và giải pháp sử dụng máy ảo VMware
 % ══════════════════════════════════════════════════════════════════════════════
 
-\subsection{3.4 Triển khai mạng Ad-hoc và giải pháp sử dụng máy ảo VMware}
+\subsection{3.4 Triển khai mạng và giải pháp sử dụng máy ảo VMware}
 
-\textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành Windows không còn hỗ trợ tạo mạng Ad-hoc trực tiếp, nhóm đã chuyển hướng thực hiện cấu hình trên môi trường máy ảo VMware Workstation.}
+\textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành Windows không còn hỗ trợ tạo mạng Ad-hoc trực tiếp, nhóm đã chuyển hướng thực hiện cấu hình mạng ngang hàng kết hợp giữa máy tính vật lý và môi trường máy ảo VMware Workstation.}
 
 % --------------------------------------------------
 \subsubsection{3.4.1 Tổng quan về kiến trúc mạng Ad-hoc}
@@ -353,37 +352,86 @@ Hosted network supported : No
 
 \begin{figure}[H]
     \centering
-     \includegraphics[width=0.85\textwidth]{image/cmd_hosted_network_no.png}
+    \includegraphics[width=0.85\textwidth]{image/cmd_hosted_network_no.png}
     \caption{Kết quả kiểm tra lệnh netsh wlan show drivers cho thấy Hosted network không được hỗ trợ}
     \label{fig:hosted_network_no}
- \end{figure}
+\end{figure}
 
 Nguyên nhân của lỗi này là do các bản cập nhật Windows đời mới và driver của các dòng card mạng hiện đại đã loại bỏ tính năng Soft AP (Hosted network). Do đó, nhóm không thể thiết lập mạng Ad-hoc trực tiếp trên phần cứng của máy tính thật.
 
 % --------------------------------------------------
-\subsubsection{3.4.3 Giải pháp thay thế bằng VMware Workstation}
+\subsubsection{3.4.3 Giải pháp kết nối giữa Máy thật (Host) và Máy ảo (VM)}
 % --------------------------------------------------
 
-Từ rào cản phần cứng nêu trên, nhóm đã quyết định chuyển sang sử dụng phần mềm ảo hóa VMware Workstation. VMware cung cấp các công cụ cấu hình mạng ảo linh hoạt, giúp nhóm có thể giả lập môi trường giao tiếp giữa các máy tính.
+Từ rào cản phần cứng nêu trên, nhóm đã quyết định sử dụng phần mềm ảo hóa VMware Workstation để thiết lập một mạng nội bộ trực tiếp giữa máy tính vật lý (Host) và máy ảo (VM).
 
 Quá trình thiết lập mạng ảo được thực hiện như sau:
 \begin{itemize}
     \item Mở VMware Workstation, truy cập vào thanh công cụ \textbf{Edit} $\rightarrow$ \textbf{Virtual Network Editor}.
     \item Trong cửa sổ Virtual Network Editor, nhóm sử dụng card mạng ảo \textbf{VMnet1} được thiết lập ở chế độ \textbf{Host-only} (mạng cục bộ, riêng tư).
-    \item Ở cấu hình này, các máy ảo sẽ được cấp phát địa chỉ IP chung một dải mạng (ví dụ: \texttt{192.168.140.0}). Chế độ Host-only cho phép các máy ảo kết nối và trao đổi dữ liệu trực tiếp với nhau trong một môi trường cô lập mà không cần phải đi qua mạng vật lý bên ngoài, mô phỏng đúng tính chất của kết nối Ad-hoc nội bộ.
+    \item Chế độ Host-only tạo ra một bộ chuyển mạch ảo (virtual switch) kết nối trực tiếp hệ điều hành của máy thật và hệ điều hành của máy ảo. Cả hai thiết bị sẽ chia sẻ chung một dải mạng (Subnet \texttt{192.168.1.0/24}). Mô hình này giải quyết được rào cản phần cứng, đồng thời mô phỏng chính xác tính chất kết nối nội bộ ngang hàng (peer-to-peer).
 \end{itemize}
 
- \begin{figure}[H]
+\begin{figure}[H]
      \centering
      \includegraphics[width=0.85\textwidth]{image/vmware_virtual_network_editor.png}
      \caption{Cấu hình mạng ảo VMnet1 (Host-only) trong Virtual Network Editor}
      \label{fig:vmware_network_editor}
- \end{figure}
+\end{figure}
 
 Ghi nhận về sự ưu thế khi sử dụng VMware Workstation trong bài toán này:
 \begin{itemize}
     \item \textbf{Vượt qua rào cản phần cứng:} Môi trường ảo hóa hoàn toàn độc lập với driver và chip Wi-Fi vật lý, giải quyết triệt để lỗi \texttt{Hosted network supported: No}. Nhóm có thể mô phỏng topology mạng mà không bị giới hạn bởi card mạng thật.
     \item \textbf{Môi trường độc lập và an toàn:} Các thực nghiệm được tiến hành hoàn toàn trong mạng ảo cô lập (Host-only), không gây xung đột hay ảnh hưởng đến hệ thống mạng Internet vật lý bên ngoài.
-    \item \textbf{Linh hoạt về cấu hình:} Nhóm có thể dễ dàng theo dõi, điều chỉnh dải IP hoặc cấp phát/bổ sung thêm số lượng máy ảo (nút mạng) một cách nhanh chóng mà không cần tốn kém chi phí mua sắm thiết bị.
-    \item \textbf{Khả năng khôi phục nhanh:} Tính năng \textit{Snapshot} của VMware giúp dễ dàng khôi phục lại trạng thái mạng ổn định nếu xảy ra sai sót trong quá trình cấu hình thử nghiệm.
+    \item \textbf{Linh hoạt và tiện lợi trong kiểm thử:} Nhóm có thể thao tác trực tiếp trên máy thật của mình và quan sát phản hồi từ máy ảo trên cùng một màn hình vật lý, giúp quá trình triển khai và theo dõi trực quan hơn.
 \end{itemize}
+
+% --------------------------------------------------
+\subsubsection{3.4.4 Thực nghiệm kết nối và chia sẻ dữ liệu hai chiều thành công}
+% --------------------------------------------------
+
+Để chứng minh tính khả thi của giải pháp, nhóm đã tiến hành thực nghiệm kết nối và chia sẻ dữ liệu hai chiều trực tiếp giữa Máy thật (Host) và Máy ảo (VM) chạy trong cùng mạng Host-only (VMnet1).
+
+\textbf{Bước 1: Cấu hình địa chỉ IP tương thích dải mạng} \\
+Do cả máy thật và máy ảo đều được kết nối vào chung một mạng VMnet1, nhóm tiến hành thiết lập địa chỉ IP sao cho nằm cùng một đường mạng (Subnet \texttt{192.168.1.0/24}). Cụ thể:
+\begin{itemize}
+    \item \textbf{Máy thật (Host):} Card mạng ảo \textit{VMware Network Adapter VMnet1} trên hệ điều hành thật được cấu hình địa chỉ IP tĩnh là \texttt{192.168.1.1}, Subnet Mask \texttt{255.255.255.0}.
+    \item \textbf{Máy ảo (VM):} Được gán địa chỉ IP tĩnh nằm trong cùng dải mạng là \texttt{192.168.1.2}, Subnet Mask \texttt{255.255.255.0}.
+\end{itemize}
+
+\textbf{Bước 2: Kiểm tra kết nối mạng hai chiều (Ping Test)} \\
+Nhóm thực hiện kiểm tra thông tuyến từ cả hai phía nhằm đảm bảo kết nối song phẳng:
+\begin{itemize}
+    \item Từ cửa sổ Command Prompt của máy thật, thực hiện lệnh \texttt{ping 192.168.1.2} để kiểm tra tín hiệu đến máy ảo.
+    \item Ngược lại, từ máy ảo, thực hiện lệnh \texttt{ping 192.168.1.1} để kiểm tra tín hiệu hồi đáp về máy thật.
+\end{itemize}
+Kết quả trả về \texttt{Reply from...} từ cả hai chiều với tỷ lệ mất gói (loss) là 0\%, xác nhận hai môi trường đã thông mạng và có thể giao tiếp trực tiếp theo mô hình ngang hàng.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{image/ping_success.png}
+    \includegraphics[width=0.85\textwidth]{image/ping_success2.png}
+    \caption{Kết quả kiểm tra Ping thành công hai chiều giữa Máy thật và Máy ảo}
+    \label{fig:ping_success}
+\end{figure}
+
+\textbf{Bước 3: Thực hiện chia sẻ dữ liệu qua lại (File Sharing)} \\
+Để kiểm chứng khả năng trao đổi thông tin, nhóm thiết lập chia sẻ thư mục trên hệ thống:
+\begin{itemize}
+    \item Tiến hành tạo một thư mục, thiết lập quyền chia sẻ (Properties $\rightarrow$ Sharing $\rightarrow$ Advanced Sharing) và cấp quyền truy cập đầy đủ (Permissions) cho tài khoản Everyone.
+    \item Đảm bảo tính năng \textit{Network Discovery} và \textit{File and Printer Sharing} trong mạng nội bộ đã được kích hoạt trên cả hệ thống máy thật lẫn máy ảo.
+    \item Từ máy khách, truy cập vào công cụ \textit{Run} (Windows + R) và nhập địa chỉ IP của máy chia sẻ tương ứng (ví dụ truy cập máy ảo bằng lệnh \texttt{\textbackslash\textbackslash 192.168.1.2} hoặc truy cập máy thật bằng lệnh \texttt{\textbackslash\textbackslash 192.168.1.1}).
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{image/file_sharing_success.png}
+    \includegraphics[width=0.85\textwidth]{image/file_sharing_success2.png}
+    \includegraphics[width=0.85\textwidth]{image/file_sharing_success3.png}
+
+    \caption{Quá trình truy cập và chia sẻ dữ liệu thành công giữa Máy thật và Máy ảo}
+    \label{fig:file_sharing_success}
+\end{figure}
+
+\textbf{Kết luận:} \\
+Quá trình truy cập và sao chép dữ liệu hai chiều diễn ra nhanh chóng, ổn định, dữ liệu được giữ nguyên vẹn cấu trúc. Điều này minh chứng rằng thông qua việc sử dụng tính năng Host-only của VMware Workstation, nhóm đã thiết lập thành công một môi trường mạng nội bộ cô lập. Môi trường này đáp ứng đầy đủ các tiêu chuẩn giao tiếp trực tiếp ngang hàng tương đương với kiến trúc mạng Ad-hoc vật lý, phục vụ trọn vẹn yêu cầu cấu hình và kiểm thử của đồ án.
