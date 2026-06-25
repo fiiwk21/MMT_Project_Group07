@@ -3,15 +3,14 @@
 \subsection{2.1 Khái niệm}
 
 
-\subsection{2.2 Các thành phần của mạng WLAN}
+\subsection{2.2 Các thành phần của mạng WLAN\cite{kurose2020computer}}
 Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần khác nhau, đóng vai trò quan trọng trong việc truyền tải và xử lý tín hiệu không dây:
 \begin{itemize}
-    \item \textbf{Access Point (AP) / Wireless Router:} là thiết bị trung tâm của mạng WLAN, 
-    có chức năng thu phát tín hiệu vô tuyến và đóng vai trò cầu nối giữa các thiết bị không dây 
-    với mạng có dây (LAN) hoặc Internet. Access Point hoạt động ở tầng liên kết dữ liệu (Data 
-    Link Layer), quản lý việc kết nối, xác thực và phân phối địa chỉ IP cho các thiết bị đầu cuối 
-    thông qua giao thức DHCP. Wireless Router tích hợp thêm chức năng định tuyến (routing), cho 
-    phép kết nối trực tiếp với modem để chia sẻ đường truyền Internet đến toàn bộ mạng nội bộ.
+    \item \textbf{Access Point (AP) \& Wireless Router :} là các thiết bị trung tâm của mạng WLAN, đảm nhận vai trò quản lý kết nối không dây:
+        \begin{itemize}
+            \item \textbf{Access Point (AP):} hoạt động chủ yếu ở tầng vật lý (Physical Layer) và tầng liên kết dữ liệu (Data Link Layer), đóng vai trò như một cầu nối (bridge) chuyển đổi tín hiệu vô tuyến từ các thiết bị không dây thành tín hiệu điện để truyền vào mạng có dây (LAN). AP thuần túy không có chức năng định tuyến hay cấp phát địa chỉ IP.
+            \item \textbf{Wireless Router (Bộ định tuyến không dây):} tích hợp chức năng của AP, Switch và Router. Thiết bị này hoạt động lên đến tầng mạng (Network Layer) và tầng ứng dụng, tích hợp tính năng định tuyến (routing), quản lý xác thực và tự động phân phối địa chỉ IP cho các thiết bị đầu cuối thông qua giao thức DHCP, đồng thời kết nối trực tiếp với modem để chia sẻ Internet cho toàn mạng nội bộ.
+        \end{itemize}
     \item \textbf{Wireless Network Interface Controller (WNIC):} hay còn gọi là card mạng không 
     dây, là thành phần phần cứng được tích hợp hoặc gắn thêm vào thiết bị đầu cuối, đảm nhận 
     nhiệm vụ mã hóa dữ liệu thành tín hiệu vô tuyến để phát đi và giải mã tín hiệu nhận về thành 
@@ -22,7 +21,7 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
     mạng WLAN thông qua WNIC, bao gồm máy tính xách tay, điện thoại thông minh, máy tính bảng, 
     máy in không dây, camera IP và các thiết bị IoT. Đây là nguồn phát sinh và tiếp nhận dữ liệu 
     trong mạng; mỗi thiết bị đầu cuối được nhận diện bởi địa chỉ MAC duy nhất và địa chỉ IP do 
-    AP/Router cấp phát, cho phép định tuyến gói tin chính xác trong hệ thống mạng.
+    Wireless Router hoặc DHCP Server cấp phát, cho phép định tuyến gói tin chính xác trong hệ thống mạng.
     \item \textbf{Môi trường truyền dẫn:} trong mạng WLAN là sóng điện từ lan truyền trong không 
     gian tự do, chủ yếu sử dụng hai băng tần phổ biến:
         \begin{itemize}
@@ -37,7 +36,6 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
             ứng dụng đòi hỏi tốc độ cao trong phạm vi gần.
         \end{itemize}
 \end{itemize}
-
 \subsection{2.3 Mô hình triển khai và Giải pháp kết nối}
 
 \subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}
