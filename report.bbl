@@ -19,6 +19,27 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{geeksforgeeks2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\textit{GeeksforGeeks}}
+      \field{note}{[Online]. Available: \url{https://www.geeksforgeeks.org/difference-between-infrastructure-and-infrastructure-less-network/}}
+      \field{title}{Difference between Infrastructure and Infrastructure-less Network}
+      \field{year}{2023}
+    \endentry
     \entry{kurose2017}{book}{}
       \name{author}{2}{}{%
         {{hash=f7e2a538f9154730045515525a52bb35}{%
