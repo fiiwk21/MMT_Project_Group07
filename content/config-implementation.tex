@@ -316,5 +316,74 @@ Nhóm vô lại giao diện Router, xác nhận địa chỉ MAC hiển thị tr
 \end{figure}
 
 
-\subsection{3.4 Triển khai Mạng Ad-hoc}
-\textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành [Tên HĐH] không còn hỗ trợ tạo Ad-hoc trực tiếp, nhóm đã thực hiện cấu hình mạng Ad-hoc trên máy ảo.}
+% ══════════════════════════════════════════════════════════════════════════════
+% MỤC 3.4 — Triển khai mạng Ad-hoc và giải pháp sử dụng máy ảo VMware
+% ══════════════════════════════════════════════════════════════════════════════
+
+\subsection{3.4 Triển khai mạng Ad-hoc và giải pháp sử dụng máy ảo VMware}
+
+\textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành Windows không còn hỗ trợ tạo mạng Ad-hoc trực tiếp, nhóm đã chuyển hướng thực hiện cấu hình trên môi trường máy ảo VMware Workstation.}
+
+% --------------------------------------------------
+\subsubsection{3.4.1 Tổng quan về kiến trúc mạng Ad-hoc}
+% --------------------------------------------------
+
+Mạng Ad-hoc (hay \textit{Independent Basic Service Set} -- IBSS) là một kiến trúc mạng không dây theo mô hình ngang hàng (\textit{peer-to-peer}), trong đó các thiết bị đầu cuối trao đổi dữ liệu trực tiếp với nhau mà \textbf{không cần} đi qua một thiết bị trung gian như Access Point hay Router. Mỗi nút mạng đồng thời đảm nhận vai trò vừa là thiết bị đầu cuối, vừa là bộ chuyển tiếp gói tin cho các nút lân cận.
+
+Đặc điểm nổi bật của mô hình Ad-hoc bao gồm:
+\begin{itemize}
+    \item \textbf{Không phụ thuộc hạ tầng cố định:} Các thiết bị giao tiếp trực tiếp với nhau qua sóng vô tuyến, phù hợp với môi trường triển khai tạm thời hoặc không có điều kiện lắp đặt cơ sở hạ tầng.
+    \item \textbf{Topo mạng động:} Cấu trúc liên kết thay đổi liên tục khi các nút di chuyển hoặc rời khỏi vùng phủ sóng, đòi hỏi các giao thức định tuyến chuyên biệt.
+\end{itemize}
+
+% --------------------------------------------------
+\subsubsection{3.4.2 Vấn đề thực tế trên máy vật lý (Host)}
+% --------------------------------------------------
+
+Trong quá trình tiến hành đồ án, nhóm đã kiểm tra khả năng hỗ trợ Hosted network của máy tính vật lý (chạy hệ điều hành Windows). Thao tác kiểm tra được thực hiện qua Command Prompt (cmd) bằng lệnh:
+
+\begin{verbatim}
+netsh wlan show drivers
+\end{verbatim}
+
+Kết quả kiểm tra cho thấy, card mạng không dây của máy thật (Intel(R) Wi-Fi 6E AX211 160MHz) hiển thị thông số:
+\begin{verbatim}
+Hosted network supported : No
+\end{verbatim}
+
+% \begin{figure}[H]
+%     \centering
+     \includegraphics[width=0.85\textwidth]{image/cmd_hosted_network_no.png}
+%     \caption{Kết quả kiểm tra lệnh netsh wlan show drivers cho thấy Hosted network không được hỗ trợ}
+%     \label{fig:hosted_network_no}
+% \end{figure}
+
+Nguyên nhân của lỗi này là do các bản cập nhật Windows đời mới và driver của các dòng card mạng hiện đại đã loại bỏ tính năng Soft AP (Hosted network). Do đó, nhóm không thể thiết lập mạng Ad-hoc trực tiếp trên phần cứng của máy tính thật.
+
+% --------------------------------------------------
+\subsubsection{3.4.3 Giải pháp thay thế bằng VMware Workstation}
+% --------------------------------------------------
+
+Từ rào cản phần cứng nêu trên, nhóm đã quyết định chuyển sang sử dụng phần mềm ảo hóa VMware Workstation. VMware cung cấp các công cụ cấu hình mạng ảo linh hoạt, giúp nhóm có thể giả lập môi trường giao tiếp giữa các máy tính.
+
+Quá trình thiết lập mạng ảo được thực hiện như sau:
+\begin{itemize}
+    \item Mở VMware Workstation, truy cập vào thanh công cụ \textbf{Edit} $\rightarrow$ \textbf{Virtual Network Editor}.
+    \item Trong cửa sổ Virtual Network Editor, nhóm sử dụng card mạng ảo \textbf{VMnet1} được thiết lập ở chế độ \textbf{Host-only} (mạng cục bộ, riêng tư).
+    \item Ở cấu hình này, các máy ảo sẽ được cấp phát địa chỉ IP chung một dải mạng (ví dụ: \texttt{192.168.140.0}). Chế độ Host-only cho phép các máy ảo kết nối và trao đổi dữ liệu trực tiếp với nhau trong một môi trường cô lập mà không cần phải đi qua mạng vật lý bên ngoài, mô phỏng đúng tính chất của kết nối Ad-hoc nội bộ.
+\end{itemize}
+
+% \begin{figure}[H]
+%     \centering
+     \includegraphics[width=0.85\textwidth]{image/vmware_virtual_network_editor.png}
+%     \caption{Cấu hình mạng ảo VMnet1 (Host-only) trong Virtual Network Editor}
+%     \label{fig:vmware_network_editor}
+% \end{figure}
+
+Ghi nhận về sự ưu thế khi sử dụng VMware Workstation trong bài toán này:
+\begin{itemize}
+    \item \textbf{Vượt qua rào cản phần cứng:} Môi trường ảo hóa hoàn toàn độc lập với driver và chip Wi-Fi vật lý, giải quyết triệt để lỗi \texttt{Hosted network supported: No}. Nhóm có thể mô phỏng topology mạng mà không bị giới hạn bởi card mạng thật.
+    \item \textbf{Môi trường độc lập và an toàn:} Các thực nghiệm được tiến hành hoàn toàn trong mạng ảo cô lập (Host-only), không gây xung đột hay ảnh hưởng đến hệ thống mạng Internet vật lý bên ngoài.
+    \item \textbf{Linh hoạt về cấu hình:} Nhóm có thể dễ dàng theo dõi, điều chỉnh dải IP hoặc cấp phát/bổ sung thêm số lượng máy ảo (nút mạng) một cách nhanh chóng mà không cần tốn kém chi phí mua sắm thiết bị.
+    \item \textbf{Khả năng khôi phục nhanh:} Tính năng \textit{Snapshot} của VMware giúp dễ dàng khôi phục lại trạng thái mạng ổn định nếu xảy ra sai sót trong quá trình cấu hình thử nghiệm.
+\end{itemize}
