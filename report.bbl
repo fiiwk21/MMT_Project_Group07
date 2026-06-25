@@ -19,20 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{10979691}{article}{}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Std 802.11-2024 (Revision of IEEE Std 802.11-2020)}
-      \field{title}{IEEE Standard for Information Technology--Telecommunications and Information Exchange between Systems Local and Metropolitan Area Networks--Specific Requirements Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications}
-      \field{year}{2025}
-      \field{pages}{1\bibrangedash 5956}
-      \range{pages}{5956}
-      \verb{doi}
-      \verb 10.1109/IEEESTD.2025.10979691
-      \endverb
-      \keyw{IEEE Standards;Local area networks;Metropolitan area networks;Multiaccess communication;Encryption;Blockchains;Message authentication;Information technology;Information exchange;Wireless LAN;Physical layer;Protocols;2.4 GHz;256-QAM;3650 MHz;4.9 GHz;5 GHz;5.9 GHz;60 GHz;advanced encryption standard;AES;audio;beamforming;carrier sense multiple access/collision avoidance;CCMP;channel switching;clustering;contention based access period}
-    \endentry
     \entry{kurose2017}{book}{}
       \name{author}{2}{}{%
         {{hash=f7e2a538f9154730045515525a52bb35}{%
@@ -59,6 +45,7 @@
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{edition}{7th}
       \field{title}{Computer Networking: A Top-Down Approach}
       \field{year}{2017}
     \endentry
@@ -88,10 +75,12 @@
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{edition}{5th}
       \field{title}{Computer Networks}
       \field{year}{2010}
     \endentry
   \enddatalist
+  \missing{10979691}
 \endrefsection
 \endinput
 
