@@ -14,7 +14,6 @@
 \usepackage{subcaption}
 \usepackage{placeins}
 \usepackage{caption}
-\usepackage[nottoc,notlof,notlot]{tocbibind}
 
 % --- CẤU HÌNH CĂN LỀ ---
 \usepackage[left=3cm, right=2cm, top=2cm, bottom=2cm]{geometry}
@@ -30,21 +29,28 @@
 % --- PACKAGES ---
 \usepackage{amsmath, amssymb}
 \usepackage{tabularx}
+
+% --- Gộp chung hyperref cài đặt màu đen chuẩn chỉ ---
 \usepackage{hyperref}
+\hypersetup{
+    unicode=true,
+    colorlinks=true,
+    linkcolor=black,     % Tất cả liên kết nội bộ = Đen
+    citecolor=black,     % Nhãn trích dẫn [1], [2] = Đen
+    urlcolor=black,      % Đường link website = Đen
+    hypertexnames=false
+}
 \usepackage{bookmark}
 \usepackage{setspace}
 \usepackage{titlesec}
 \usepackage{tikz}
+
+% Cấu hình biblatex tự động sắp xếp theo thứ tự xuất hiện (style=ieee)
+\usepackage[style=ieee, backend=biber]{biblatex} 
 \usetikzlibrary{calc}
 
 \onehalfspacing
-\hypersetup{
-    unicode=true, 
-    colorlinks=true, 
-    linkcolor=blue, 
-    urlcolor=blue, 
-    hypertexnames=false
-}
+
 % --- ĐỊNH NGHĨA LẠI GIAO DIỆN CHƯƠNG ---
 \titleformat{\chapter}[display]
 {\normalfont\Huge\bfseries\raggedright}
@@ -57,3 +63,6 @@
 \SetKwProg{Fn}{Function}{}{end}
 \usepackage{chngcntr}
 \counterwithout{section}{chapter} 
+
+% Đường dẫn đến file .bib của bạn
+\addbibresource{content/references.bib}

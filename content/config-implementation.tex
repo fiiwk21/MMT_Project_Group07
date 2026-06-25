@@ -213,5 +213,225 @@ với thông số đã nhập.
     \caption{Kết quả \texttt{ipconfig} xác nhận IP tĩnh được gán thành công}
     \label{fig:ipconfig-static}
 \end{figure}
-\subsection{3.4 Triển khai Mạng Ad-hoc}
-\textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành [Tên HĐH] không còn hỗ trợ tạo Ad-hoc trực tiếp, nhóm đã thực hiện cấu hình mạng Ad-hoc trên máy ảo.}
+
+\subsubsection{3.3.2 Kết nối bằng Smartphone}
+
+Sau khi hoàn tất cấu hình SSID, nhóm tiến hành kiểm tra và kết nối thiết bị 
+Smartphone vào mạng \texttt{25CLC10-N07} theo cấp phát địa chỉ 
+IP tự động (DHCP).
+
+\textbf{Kiểm tra trạng thái trước khi kết nối:}
+Trước tiên, nhóm tắt hết WiFi và $4G$ của điện thoại để đảm bảo không có kết nối từ trước.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_no_wifi_4G.png}
+    \caption{Giao diện của điện thoại chưa kết nối WiFi và $4G$}
+    \label{fig:smartphone_no_wifi_4G}
+\end{figure}
+
+\textbf{Kết nối bằng IP động (DHCP):}
+Thiết bị được giữ nguyên ở chế độ \textit{Obtain an IP address automatically}. 
+Nhóm chọn SSID \texttt{25CLC10-N07} từ danh sách mạng Wi-Fi khả dụng, nhập mật 
+khẩu \texttt{1234567890a} và nhấn \textbf{Kết nối}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_connect_dhcp.png}
+    \caption{Chọn kết nối vào SSID \texttt{25CLC10-N07(2)}}
+    \label{fig:smartphone_connect_dhcp}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_connect_dhcp_password.png}
+    \caption{Nhập mật khẩu xác thực WPA2-PSK(2)}
+    \label{fig:smartphone_connect_dhcp_password}
+\end{figure}
+
+Sau khi xác thực thành công, 
+giao diện Wi-Fi hiển thị trạng thái đã kết nối với SSID mà nhóm đã thiết lập, 
+xác nhận thiết bị đã kết nối thành công vào mạng.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_connect_dhcp_success.png}
+    \caption{Trạng thái sau khi kết nối thành công qua DHCP}
+    \label{fig:smartphone_connect_dhcp_success}
+\end{figure}
+
+Giao diện quản trị Router ghi nhận thiết bị \texttt{Redmi-Note-9S} đã xuất hiện trong 
+danh sách với địa chỉ IP được cấp phát tự động là \texttt{192.168.1.5}, băng tần 
+2.4GHz, RSSI \texttt{-67 dBm} và địa chỉ MAC EA21:45:B9:3B:02.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_router_client_dhcp.png}
+    \caption{Router ghi nhận thiết bị \texttt{Redmi-Note-9S} kết nối thành công qua DHCP}
+    \label{fig:smartphone_router_client_dhcp}
+\end{figure}
+
+
+Để đảm bảo rằng đã điện thoại đã kết nối thành công vô SSID, nhóm kiểm tra thêm địa chỉ MAC.
+Nhóm vào lại phần cài đặt điện thoại, vô phần giới thiệu điện thoại.
+Tiếp theo là vô phần thông số chi tiết.
+Cuối cùng là vô phần trạng thái, 
+kéo xuống cuối cùng nhóm tìm được địa chỉ MAC của điện thoại (50:3D:C6:10:01:46).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_mac_address.png}
+    \caption{Địa chỉ MAC của thiết bị \texttt{Redmi-Note-9S}}
+    \label{fig:smartphone_mac_address}
+\end{figure}
+
+Nhóm chỉnh lại địa chỉ MAC mà WiFi điện thoại đang xài do địa chỉ MAC hiển thị trên Router khác với điện thoại.
+Nhóm vào lại phần cài đặt WiFi, bấm vô dấu mũi tên ở tên mạng,
+vô được phần thông tin của mạng.
+Ở phần này có thể chỉnh các thông số như cài đặt IP (DHCP hoặc tĩnh), Proxy và quyền riêng tư,
+bấm vào phần quyền riêng tư, chỉnh sử dụng MAC ngẫu nhiên sang MAC thiết bị.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_change_mac_address.png}
+    \caption{Thay đổi địa chỉ MAC}
+    \label{fig:smartphone_change_mac_address}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_correct_mac_address.png}
+    \caption{Thay đổi thành công địa chỉ MAC ngẫu nhiên sang MAC thiết bị}
+    \label{fig:smartphone_correct_mac_address}
+\end{figure}
+
+Nhóm vô lại giao diện Router, xác nhận địa chỉ MAC hiển thị trên Router đã chuyển sang MAC thiết bị,
+đảm bảo thiết bị đã kết nối thành công.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image/smartphone_correct_mac_address_router.png}
+    \caption{Địa chỉ MAC trên Router hiển thị MAC điện thoại}
+    \label{fig:smartphone_correct_mac_address_router}
+\end{figure}
+
+% ══════════════════════════════════════════════════════════════════════════════
+% MỤC 3.4 — Triển khai mạng và giải pháp sử dụng máy ảo VMware
+% ══════════════════════════════════════════════════════════════════════════════
+
+\subsection{3.4 Triển khai mạng và giải pháp sử dụng máy ảo VMware}
+
+\textit{Chú ý: Do thiết bị thực tế của nhóm đang chạy hệ điều hành Windows không còn hỗ trợ tạo mạng Ad-hoc trực tiếp, nhóm đã chuyển hướng thực hiện cấu hình mạng ngang hàng kết hợp giữa máy tính vật lý và môi trường máy ảo VMware Workstation.}
+
+% --------------------------------------------------
+\subsubsection{3.4.1 Tổng quan về kiến trúc mạng Ad-hoc}
+% --------------------------------------------------
+
+Mạng Ad-hoc (hay \textit{Independent Basic Service Set} -- IBSS) là một kiến trúc mạng không dây theo mô hình ngang hàng (\textit{peer-to-peer}), trong đó các thiết bị đầu cuối trao đổi dữ liệu trực tiếp với nhau mà \textbf{không cần} đi qua một thiết bị trung gian như Access Point hay Router. Mỗi nút mạng đồng thời đảm nhận vai trò vừa là thiết bị đầu cuối, vừa là bộ chuyển tiếp gói tin cho các nút lân cận.
+
+Đặc điểm nổi bật của mô hình Ad-hoc bao gồm:
+\begin{itemize}
+    \item \textbf{Không phụ thuộc hạ tầng cố định:} Các thiết bị giao tiếp trực tiếp với nhau qua sóng vô tuyến, phù hợp với môi trường triển khai tạm thời hoặc không có điều kiện lắp đặt cơ sở hạ tầng.
+    \item \textbf{Topo mạng động:} Cấu trúc liên kết thay đổi liên tục khi các nút di chuyển hoặc rời khỏi vùng phủ sóng, đòi hỏi các giao thức định tuyến chuyên biệt.
+\end{itemize}
+
+% --------------------------------------------------
+\subsubsection{3.4.2 Vấn đề thực tế trên máy vật lý (Host)}
+% --------------------------------------------------
+
+Trong quá trình tiến hành đồ án, nhóm đã kiểm tra khả năng hỗ trợ Hosted network của máy tính vật lý (chạy hệ điều hành Windows). Thao tác kiểm tra được thực hiện qua Command Prompt (cmd) bằng lệnh:
+
+\begin{verbatim}
+netsh wlan show drivers
+\end{verbatim}
+
+Kết quả kiểm tra cho thấy, card mạng không dây của máy thật (Intel(R) Wi-Fi 6E AX211 160MHz) hiển thị thông số:
+\begin{verbatim}
+Hosted network supported : No
+\end{verbatim}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{image/cmd_hosted_network_no.png}
+    \caption{Kết quả kiểm tra lệnh netsh wlan show drivers cho thấy Hosted network không được hỗ trợ}
+    \label{fig:hosted_network_no}
+\end{figure}
+
+Nguyên nhân của lỗi này là do các bản cập nhật Windows đời mới và driver của các dòng card mạng hiện đại đã loại bỏ tính năng Soft AP (Hosted network). Do đó, nhóm không thể thiết lập mạng Ad-hoc trực tiếp trên phần cứng của máy tính thật.
+
+% --------------------------------------------------
+\subsubsection{3.4.3 Giải pháp kết nối giữa Máy thật (Host) và Máy ảo (VM)}
+% --------------------------------------------------
+
+Từ rào cản phần cứng nêu trên, nhóm đã quyết định sử dụng phần mềm ảo hóa VMware Workstation để thiết lập một mạng nội bộ trực tiếp giữa máy tính vật lý (Host) và máy ảo (VM).
+
+Quá trình thiết lập mạng ảo được thực hiện như sau:
+\begin{itemize}
+    \item Mở VMware Workstation, truy cập vào thanh công cụ \textbf{Edit} $\rightarrow$ \textbf{Virtual Network Editor}.
+    \item Trong cửa sổ Virtual Network Editor, nhóm sử dụng card mạng ảo \textbf{VMnet1} được thiết lập ở chế độ \textbf{Host-only} (mạng cục bộ, riêng tư).
+    \item Chế độ Host-only tạo ra một bộ chuyển mạch ảo (virtual switch) kết nối trực tiếp hệ điều hành của máy thật và hệ điều hành của máy ảo. Cả hai thiết bị sẽ chia sẻ chung một dải mạng (Subnet \texttt{192.168.1.0/24}). Mô hình này giải quyết được rào cản phần cứng, đồng thời mô phỏng chính xác tính chất kết nối nội bộ ngang hàng (peer-to-peer).
+\end{itemize}
+
+\begin{figure}[H]
+     \centering
+     \includegraphics[width=0.85\textwidth]{image/vmware_virtual_network_editor.png}
+     \caption{Cấu hình mạng ảo VMnet1 (Host-only) trong Virtual Network Editor}
+     \label{fig:vmware_network_editor}
+\end{figure}
+
+Ghi nhận về sự ưu thế khi sử dụng VMware Workstation trong bài toán này:
+\begin{itemize}
+    \item \textbf{Vượt qua rào cản phần cứng:} Môi trường ảo hóa hoàn toàn độc lập với driver và chip Wi-Fi vật lý, giải quyết triệt để lỗi \texttt{Hosted network supported: No}. Nhóm có thể mô phỏng topology mạng mà không bị giới hạn bởi card mạng thật.
+    \item \textbf{Môi trường độc lập và an toàn:} Các thực nghiệm được tiến hành hoàn toàn trong mạng ảo cô lập (Host-only), không gây xung đột hay ảnh hưởng đến hệ thống mạng Internet vật lý bên ngoài.
+    \item \textbf{Linh hoạt và tiện lợi trong kiểm thử:} Nhóm có thể thao tác trực tiếp trên máy thật của mình và quan sát phản hồi từ máy ảo trên cùng một màn hình vật lý, giúp quá trình triển khai và theo dõi trực quan hơn.
+\end{itemize}
+
+% --------------------------------------------------
+\subsubsection{3.4.4 Thực nghiệm kết nối và chia sẻ dữ liệu hai chiều thành công}
+% --------------------------------------------------
+
+Để chứng minh tính khả thi của giải pháp, nhóm đã tiến hành thực nghiệm kết nối và chia sẻ dữ liệu hai chiều trực tiếp giữa Máy thật (Host) và Máy ảo (VM) chạy trong cùng mạng Host-only (VMnet1).
+
+\textbf{Bước 1: Cấu hình địa chỉ IP tương thích dải mạng} \\
+Do cả máy thật và máy ảo đều được kết nối vào chung một mạng VMnet1, nhóm tiến hành thiết lập địa chỉ IP sao cho nằm cùng một đường mạng (Subnet \texttt{192.168.1.0/24}). Cụ thể:
+\begin{itemize}
+    \item \textbf{Máy thật (Host):} Card mạng ảo \textit{VMware Network Adapter VMnet1} trên hệ điều hành thật được cấu hình địa chỉ IP tĩnh là \texttt{192.168.1.1}, Subnet Mask \texttt{255.255.255.0}.
+    \item \textbf{Máy ảo (VM):} Được gán địa chỉ IP tĩnh nằm trong cùng dải mạng là \texttt{192.168.1.2}, Subnet Mask \texttt{255.255.255.0}.
+\end{itemize}
+
+\textbf{Bước 2: Kiểm tra kết nối mạng hai chiều (Ping Test)} \\
+Nhóm thực hiện kiểm tra thông tuyến từ cả hai phía nhằm đảm bảo kết nối song phẳng:
+\begin{itemize}
+    \item Từ cửa sổ Command Prompt của máy thật, thực hiện lệnh \texttt{ping 192.168.1.2} để kiểm tra tín hiệu đến máy ảo.
+    \item Ngược lại, từ máy ảo, thực hiện lệnh \texttt{ping 192.168.1.1} để kiểm tra tín hiệu hồi đáp về máy thật.
+\end{itemize}
+Kết quả trả về \texttt{Reply from...} từ cả hai chiều với tỷ lệ mất gói (loss) là 0\%, xác nhận hai môi trường đã thông mạng và có thể giao tiếp trực tiếp theo mô hình ngang hàng.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{image/ping_success.png}
+    \includegraphics[width=0.85\textwidth]{image/ping_success2.png}
+    \caption{Kết quả kiểm tra Ping thành công hai chiều giữa Máy thật và Máy ảo}
+    \label{fig:ping_success}
+\end{figure}
+
+\textbf{Bước 3: Thực hiện chia sẻ dữ liệu qua lại (File Sharing)} \\
+Để kiểm chứng khả năng trao đổi thông tin, nhóm thiết lập chia sẻ thư mục trên hệ thống:
+\begin{itemize}
+    \item Tiến hành tạo một thư mục, thiết lập quyền chia sẻ (Properties $\rightarrow$ Sharing $\rightarrow$ Advanced Sharing) và cấp quyền truy cập đầy đủ (Permissions) cho tài khoản Everyone.
+    \item Đảm bảo tính năng \textit{Network Discovery} và \textit{File and Printer Sharing} trong mạng nội bộ đã được kích hoạt trên cả hệ thống máy thật lẫn máy ảo.
+    \item Từ máy khách, truy cập vào công cụ \textit{Run} (Windows + R) và nhập địa chỉ IP của máy chia sẻ tương ứng (ví dụ truy cập máy ảo bằng lệnh \texttt{\textbackslash\textbackslash 192.168.1.2} hoặc truy cập máy thật bằng lệnh \texttt{\textbackslash\textbackslash 192.168.1.1}).
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{image/file_sharing_success.png}
+    \includegraphics[width=0.85\textwidth]{image/file_sharing_success2.png}
+    \includegraphics[width=0.85\textwidth]{image/file_sharing_success3.png}
+
+    \caption{Quá trình truy cập và chia sẻ dữ liệu thành công giữa Máy thật và Máy ảo}
+    \label{fig:file_sharing_success}
+\end{figure}
+
+\textbf{Kết luận:} \\
+Quá trình truy cập và sao chép dữ liệu hai chiều diễn ra nhanh chóng, ổn định, dữ liệu được giữ nguyên vẹn cấu trúc. Điều này minh chứng rằng thông qua việc sử dụng tính năng Host-only của VMware Workstation, nhóm đã thiết lập thành công một môi trường mạng nội bộ cô lập. Môi trường này đáp ứng đầy đủ các tiêu chuẩn giao tiếp trực tiếp ngang hàng tương đương với kiến trúc mạng Ad-hoc vật lý, phục vụ trọn vẹn yêu cầu cấu hình và kiểm thử của đồ án.
