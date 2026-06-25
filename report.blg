@@ -1,18 +1,14 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'report.blg'
-[79] biber-MSWIN64:340> INFO - === 
-[115] Biber.pm:419> INFO - Reading 'report.bcf'
-[193] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
-[202] Biber.pm:4419> INFO - Processing section 0
-[210] Biber.pm:4610> INFO - Looking for bibtex file 'content/references.bib' for section 0
-[271] bibtex.pm:1713> INFO - LaTeX decoding ...
-[281] bibtex.pm:1519> INFO - Found BibTeX data source 'content/references.bib'
-[330] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
-[330] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[330] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'vi-VN'
-[334] bbl.pm:660> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[336] bbl.pm:763> INFO - Output to report.bbl
-[336] Biber.pm:131> WARN - I didn't find a database entry for 'ref1' (section 0)
-[336] Biber.pm:131> WARN - I didn't find a database entry for 'ref3' (section 0)
-[336] Biber.pm:131> WARN - I didn't find a database entry for 'ref4' (section 0)
-[336] Biber.pm:133> INFO - WARNINGS: 3
+[81] biber-MSWIN64:340> INFO - === 
+[123] Biber.pm:419> INFO - Reading 'report.bcf'
+[202] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
+[211] Biber.pm:4419> INFO - Processing section 0
+[218] Biber.pm:4610> INFO - Looking for bibtex file 'content/references.bib' for section 0
+[285] bibtex.pm:1713> INFO - LaTeX decoding ...
+[289] bibtex.pm:1519> INFO - Found BibTeX data source 'content/references.bib'
+[333] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[333] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
+[335] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'vi-VN'
+[338] bbl.pm:660> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[340] bbl.pm:763> INFO - Output to report.bbl
