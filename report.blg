@@ -1,14 +1,14 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'report.blg'
-[86] biber-MSWIN64:340> INFO - === 
-[132] Biber.pm:419> INFO - Reading 'report.bcf'
-[216] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
-[226] Biber.pm:4419> INFO - Processing section 0
-[235] Biber.pm:4610> INFO - Looking for bibtex file 'content/references.bib' for section 0
-[298] bibtex.pm:1713> INFO - LaTeX decoding ...
-[305] bibtex.pm:1519> INFO - Found BibTeX data source 'content/references.bib'
-[370] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[370] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
-[370] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'vi-VN'
-[372] bbl.pm:660> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[373] bbl.pm:763> INFO - Output to report.bbl
+[81] biber-MSWIN64:340> INFO - === 
+[119] Biber.pm:419> INFO - Reading 'report.bcf'
+[198] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
+[208] Biber.pm:4419> INFO - Processing section 0
+[217] Biber.pm:4610> INFO - Looking for bibtex file 'content/references.bib' for section 0
+[279] bibtex.pm:1713> INFO - LaTeX decoding ...
+[285] bibtex.pm:1519> INFO - Found BibTeX data source 'content/references.bib'
+[327] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
+[327] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[328] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'vi-VN'
+[330] bbl.pm:660> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[331] bbl.pm:763> INFO - Output to report.bbl
