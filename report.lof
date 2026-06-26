@@ -20,4 +20,8 @@
 \contentsline {figure}{\numberline {19}{\ignorespaces Thay đổi địa chỉ MAC}}{19}{figure.caption.27}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Thay đổi thành công địa chỉ MAC ngẫu nhiên sang MAC thiết bị}}{19}{figure.caption.28}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Địa chỉ MAC trên Router hiển thị MAC điện thoại}}{19}{figure.caption.29}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Hình ảnh chứng minh thời gian cập nhật video lên Drive hợp lệ}}{23}{figure.caption.30}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Kết quả kiểm tra lệnh netsh wlan show drivers cho thấy Hosted network không được hỗ trợ}}{21}{figure.caption.30}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Cấu hình mạng ảo VMnet1 (Host-only) trong Virtual Network Editor}}{22}{figure.caption.31}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Kết quả kiểm tra Ping thành công hai chiều giữa Máy thật và Máy ảo}}{23}{figure.caption.32}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Quá trình truy cập và chia sẻ dữ liệu thành công giữa Máy thật và Máy ảo}}{25}{figure.caption.33}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Hình ảnh chứng minh thời gian cập nhật video lên Drive hợp lệ}}{27}{figure.caption.34}%
