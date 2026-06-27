@@ -11,17 +11,17 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces Router ghi nhận thiết bị \texttt {Jin56} kết nối thành công qua DHCP}}{13}{figure.caption.17}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Cấu hình địa chỉ IP tĩnh thủ công trên thiết bị đầu cuối}}{14}{figure.caption.19}%
 \contentsline {figure}{\numberline {12}{\ignorespaces Kết quả \texttt {ipconfig} xác nhận IP tĩnh được gán thành công}}{14}{figure.caption.20}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Giao diện của điện thoại chưa kết nối WiFi và $4G$}}{15}{figure.caption.21}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Chọn kết nối vào SSID \texttt {25CLC10-N07(2)}}}{16}{figure.caption.22}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Nhập mật khẩu xác thực WPA2-PSK(2)}}{16}{figure.caption.23}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Trạng thái sau khi kết nối thành công qua DHCP}}{17}{figure.caption.24}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Router ghi nhận thiết bị \texttt {Redmi-Note-9S} kết nối thành công qua DHCP}}{17}{figure.caption.25}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Địa chỉ MAC của thiết bị \texttt {Redmi-Note-9S}}}{18}{figure.caption.26}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Thay đổi địa chỉ MAC}}{19}{figure.caption.27}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Thay đổi thành công địa chỉ MAC ngẫu nhiên sang MAC thiết bị}}{19}{figure.caption.28}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Địa chỉ MAC trên Router hiển thị MAC điện thoại}}{19}{figure.caption.29}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Kết quả kiểm tra lệnh netsh wlan show drivers cho thấy Hosted network không được hỗ trợ}}{21}{figure.caption.30}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Cấu hình mạng ảo VMnet1 (Host-only) trong Virtual Network Editor}}{22}{figure.caption.31}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Kết quả kiểm tra Ping thành công hai chiều giữa Máy thật và Máy ảo}}{23}{figure.caption.32}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Quá trình truy cập và chia sẻ dữ liệu thành công giữa Máy thật và Máy ảo}}{25}{figure.caption.33}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Hình ảnh chứng minh thời gian cập nhật video lên Drive hợp lệ}}{27}{figure.caption.34}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Giao diện Router xác nhận thiết bị Redmi Note 9S chưa kết nối}}{15}{figure.caption.21}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Chọn kết nối vào SSID \texttt {25CLC10-N07} (Smartphone)}}{15}{figure.caption.22}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Nhập mật khẩu xác thực WPA2-PSK (Smartphone)}}{15}{figure.caption.23}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Giao diện chuyển sang màu xanh sau khi kết nối thành công qua DHCP}}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Video hiển thị trên trang Youtube}}{16}{figure.caption.25}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Cấu hình địa chỉ IP tĩnh thủ công trên thiết bị đầu cuối (Smartphone)}}{17}{figure.caption.27}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Chuyển địa chỉ MAC ngẫu nhiên sang địa chỉ MAC thiết bị}}{17}{figure.caption.28}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Hiển thị địa chỉ MAC của thiết bị}}{18}{figure.caption.29}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Kết quả xác nhận IP tĩnh và địa chỉ MAC được điều chỉnh thành công}}{18}{figure.caption.30}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Kết quả kiểm tra lệnh netsh wlan show drivers cho thấy Hosted network không được hỗ trợ}}{19}{figure.caption.31}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Cấu hình mạng ảo VMnet1 (Host-only) trong Virtual Network Editor}}{20}{figure.caption.32}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Kết quả kiểm tra Ping thành công hai chiều giữa Máy thật và Máy ảo}}{21}{figure.caption.33}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Quá trình truy cập và chia sẻ dữ liệu thành công giữa Máy thật và Máy ảo}}{23}{figure.caption.34}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Hình ảnh chứng minh thời gian cập nhật video lên Drive hợp lệ}}{25}{figure.caption.35}%
