@@ -48,18 +48,18 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
 \end{itemize}
 \subsection{2.3 Mô hình triển khai và Giải pháp kết nối}
 
-\subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)}
+\subsubsection{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)\cite{kurose2017}}
 
 \begin{itemize}
     \item \textbf{Khái niệm:}
     \begin{itemize}
         \item Mọi gói tin đều phải đi qua một thiết bị trung gian là Access Point (AP) 
-        hoặc Router, các thiết bị đầu cuối không giao tiếp trực tiếp với nhau~\cite{kurose2017}.
+        hoặc Router, các thiết bị đầu cuối không giao tiếp trực tiếp với nhau.
         \item Thường được lắp đặt cố định để phục vụ lâu dài: mạng Wi-Fi gia đình, 
         văn phòng, giảng đường đại học, \ldots
     \end{itemize}
 
-    \item \textbf{Thành phần chính~\cite{kurose2017}:}
+    \item \textbf{Thành phần chính:}
     \begin{itemize}
         \item \textbf{Access Point (AP) / Router Wi-Fi:} 
         Thiết bị trung tâm điều phối toàn bộ lưu lượng trong mạng.
@@ -72,21 +72,21 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
     \item \textbf{Giao thức áp dụng:}
     \begin{itemize}
         \item \textbf{IEEE 802.11:} 
-        Tiêu chuẩn quy định cách truyền nhận dữ liệu qua sóng vô tuyến ở lớp vật lý~\cite{ieee80211}.
+        Tiêu chuẩn quy định cách truyền nhận dữ liệu qua sóng vô tuyến ở lớp vật lý\cite{ieee80211}.
         \item \textbf{WPA2-PSK (AES):} 
-        Xác thực mật khẩu và mã hóa dữ liệu lớp 2~\cite{kurose2017}.
+        Xác thực mật khẩu và mã hóa dữ liệu lớp 2.
         \item \textbf{DHCP:} 
-        Tự động cấp địa chỉ IP cho thiết bị khi kết nối~\cite{kurose2017}.
+        Tự động cấp địa chỉ IP cho thiết bị khi kết nối.
     \end{itemize}
 
-    \item \textbf{Ưu điểm~\cite{kurose2017,geeksforgeeks2023}:}
+    \item \textbf{Ưu điểm\cite{geeksforgeeks2023}:}
     \begin{itemize}
         \item Dễ mở rộng: thêm thiết bị mới chỉ cần nhập đúng mật khẩu.
         \item Bảo mật và quản lý tốt: có thể cấu hình tường lửa, 
         mật khẩu mã hóa và kiểm soát danh sách thiết bị truy cập trên Router.
     \end{itemize}
 
-    \item \textbf{Nhược điểm~\cite{kurose2017,geeksforgeeks2023}:}
+    \item \textbf{Nhược điểm\cite{geeksforgeeks2023}:}
     \begin{itemize}
         \item Chi phí đầu tư ban đầu cao: phải mua Router, AP, switch 
         và hệ thống cáp Ethernet.
@@ -96,19 +96,19 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
 \end{itemize}
 
 
-\subsubsection{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)}
+\subsubsection{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)\cite{kurose2017}}
 
 \begin{itemize}
     \item \textbf{Khái niệm:}
     \begin{itemize}
         \item Các thiết bị kết nối thẳng với nhau theo kiểu ngang hàng 
         (Peer-to-Peer), hình thành mạng tạm thời mà không cần 
-        chuẩn bị hạ tầng trước~\cite{kurose2017}.
+        chuẩn bị hạ tầng trước.
         \item Một số ứng dụng thực tế: AirDrop, Quick Share, 
         mạng cảm biến không dây (WSN), mạng di động tùy biến (MANET).
     \end{itemize}
 
-    \item \textbf{Thành phần chính~\cite{kurose2017}:}
+    \item \textbf{Thành phần chính:}
     \begin{itemize}
         \item Chỉ gồm các thiết bị đầu cuối tự liên kết trực tiếp với nhau.
         \item Không có AP hay Router trung gian.
@@ -117,21 +117,21 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
     \item \textbf{Giao thức áp dụng:}
     \begin{itemize}
         \item \textbf{IEEE 802.11 (chế độ IBSS):} 
-        Quy định kiến trúc mạng không dây độc lập, không có trạm gốc~\cite{ieee80211}.
+        Quy định kiến trúc mạng không dây độc lập, không có trạm gốc\cite{ieee80211}.
         \item \textbf{Static IP / APIPA:} 
         Các máy phải gán địa chỉ IP thủ công hoặc dùng APIPA 
         tự cấp địa chỉ tạm thời trong dải 169.254.x.x 
-        do không có DHCP~\cite{kurose2017}.
+        do không có DHCP.
     \end{itemize}
 
-    \item \textbf{Ưu điểm~\cite{kurose2017,geeksforgeeks2023}:}
+    \item \textbf{Ưu điểm\cite{geeksforgeeks2023}:}
     \begin{itemize}
         \item Không tốn chi phí phần cứng, triển khai nhanh ở bất kỳ đâu.
         \item Không bị sập toàn bộ: một máy rời mạng thì 
         các máy còn lại vẫn duy trì kết nối bình thường.
     \end{itemize}
 
-    \item \textbf{Nhược điểm~\cite{kurose2017,geeksforgeeks2023}:}
+    \item \textbf{Nhược điểm\cite{geeksforgeeks2023}:}
     \begin{itemize}
         \item Hiệu năng giảm khi có nhiều thiết bị: băng thông bị chia sẻ,
         dễ xảy ra nhiễu sóng và xung đột gói tin; 
