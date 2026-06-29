@@ -143,61 +143,35 @@ Mạng WLAN được cấu thành từ nhiều thiết bị và thành phần kh
 
 
 \subsubsection{2.3.3 Giải pháp kết nối cho thiết bị đầu cuối}
-Dưới đây là các giải pháp kết nối mạng và cấu hình cho 3 loại thiết bị phổ biến theo hai mô hình mạng Infrastructure và AD-HOC:
+Dưới đây là các giải pháp kết nối mạng và cấu hình cho 3 loại thiết bị phổ biến theo hai mô hình mạng Infrastructure và Ad-hoc:
 
-Mạng Infrastructure:
+\textbf{Mạng Infrastructure:}
 \begin{itemize}
-    \item \textbf{Nhóm thiết bị di động tích hợp sẵn Wi-Fi (Laptop và Điện thoại):}
-    Giải pháp đối với nhóm này thuần túy nằm ở tầng phần mềm.
-    Các thiết bị sẽ thực hiện quét định danh mạng (SSID) do AP phát ra,
-    gửi yêu cầu xác thực bảo mật và tự động nhận cấu hình mạng
-    (IP, Subnet Mask, Default Gateway) thông qua giao thức cấp phát động
+    \item \textbf{Các thiết bị có tích hợp sẵn card Wi-Fi (Laptop và Điện thoại):}
+    Đối với các thiết bị này, nó sẽ thực hiện quét các định danh mạng (SSID) do AP phát ra, gửi yêu cầu xác thực bảo mật và tự động nhận cấu hình mạng như IP, Subnet Mask, Default Gateway thông qua giao thức cấp phát động
     DHCP của Router.
     \item \textbf{Máy tính để bàn (Desktop):}
-    Đây là thiết bị duy nhất trong bài toán mặc định không có giao tiếp
-    không dây. Thực tế triển khai đề xuất 2 lựa chọn tùy thuộc vào vị trí vật lý:
+    Đây là thiết bị duy nhất không có card Wifi tích hợp. Vì vậy, có 2 phương án có thể kết nối:
     \begin{itemize}
-        \item \textit{Phương án 1 (Tối ưu độ ổn định):}
+        \item \textit{Phương án 1:}
         Dùng cáp mạng chuẩn Cat5e/Cat6 kết nối trực tiếp từ cổng LAN
-        của Desktop vào cổng LAN của Router. Cách này tận dụng cơ chế
-        chuyển mạch nội bộ của Router, giúp Desktop vẫn giao tiếp được
+        của Router vào cổng LAN của Desktop. Cách này dựa theo cơ chế
+        chuyển mạch nội bộ của Router, giúp Desktop trao đổi dữ liệu được
         với Laptop và Điện thoại ở dải Wi-Fi mà không tốn chi phí mua thêm
         phần cứng.
-        \item \textit{Phương án 2 (Tối ưu không gian):}
+        \item \textit{Phương án 2:}
         Trang bị thêm USB Wi-Fi Adapter hoặc Card PCIe Wi-Fi để biến
-        Desktop thành một máy trạm không dây tương tự Laptop.
+        Desktop thành một thiết bị tương tự Laptop. Cách này chủ yếu cho đối tượng có Wifi gần, sóng mạnh
     \end{itemize}
 \end{itemize}
 
-Mạng AD-HOC:
-Trong kiến trúc mạng ngang hàng (IBSS), các nút giao tiếp trực tiếp
-không qua trung gian. Tuy nhiên, do các hệ điều hành hiện đại
-(Windows 10/11, Android) đã lược bỏ giao thức Ad-hoc truyền thống,
-giải pháp khả thi nhất về mặt thực nghiệm là áp dụng cơ chế
-\textbf{Điểm truy cập mềm (Soft-AP)}: chỉ định một thiết bị làm máy chủ
-tạm thời để các nút còn lại bám vào.
-Dựa trên năng lực xử lý, nhóm đề xuất chọn \textbf{Laptop làm máy chủ (Host Node)}:
+
+\textbf{Mạng Ad-hoc:}
+Trong cấu trúc mạng ngang hàng (IBSS), các thiết bị đầu cuối giao tiếp trực tiếp với nhau theo mô hình điểm - điểm (Point-to-Point) ở tầng MAC mà không thông qua bất kỳ thiết bị điều phối trung tâm nào \cite{ieee80211}.
+
+Tuy nhiên, các hệ điều hành hiện nay như Windows 10/11 hay Android đã lược bỏ giao thức IBSS từ lâu vì lý do bảo mật kém và định tuyến phức tạp \cite{ms_ibss_2021}, nên để xây dựng được mô hình mạng Ad-hoc, dùng các hệ điều hành thế hệ cũ như Windows 7 hoặc các bản Window 11 mới có cài giao thức IBSS. Do đó, giải pháp kết nối khả thi là dùng phần mềm VNware Workstation Pro để khởi tạo desktop ảo.
 \begin{itemize}
-    \item \textbf{Tại nút máy chủ (Laptop):}
-    Tiến hành khởi tạo mạng bằng tính năng \textit{Mobile Hotspot}
-    (hoặc thiết lập mạng ảo qua dòng lệnh
-    \texttt{netsh wlan hostednetwork} trong CMD).
-    Lúc này, hệ điều hành sẽ tự phân rã card Wi-Fi:
-    một phần duy trì thu tín hiệu, phần còn lại phát ra một SSID mới
-    và tự động đóng vai trò là máy chủ cấp DHCP cục bộ
-    (thường mang dải IP mặc định \texttt{192.168.137.1/24}).
-    \item \textbf{Tại các nút khách (Điện thoại và Desktop):}
-    \begin{itemize}
-        \item \textit{Với Điện thoại:}
-        Bật Wi-Fi, dò tìm SSID do Laptop phát ra và tham gia mạng như
-        một Client thông thường.
-        \item \textit{Với Desktop:}
-        Cắm USB Wi-Fi Adapter để bắt sóng từ Laptop.
-        Do dịch vụ DHCP ảo của Windows hoạt động khá chập chờn,
-        nếu gặp hiện tượng \textit{``Connected but no internet''}
-        hoặc \textit{``No network access''}, giải pháp khắc phục là
-        chuyển sang cấu hình IP tĩnh cho Desktop nằm cùng lớp mạng với Laptop
-        (ví dụ: gán IP \texttt{192.168.137.5},
-        Gateway trỏ về IP của Laptop là \texttt{192.168.137.1}).
-    \end{itemize}
+    \item \textbf{Máy chủ Desktop ảo:}
+    \item \textbf{Các nút kết nối vào (Điện thoại và Laptop):}
+    Bật Wi-Fi, dò tìm SSID do Desktop ảo phát ra và tham gia kết nối mạng.
 \end{itemize}
