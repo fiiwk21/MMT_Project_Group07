@@ -2376,6 +2376,8 @@
     <bcf:citekey order="15" intorder="1">ieee80211</bcf:citekey>
     <bcf:citekey order="16" intorder="1">geeksforgeeks2023</bcf:citekey>
     <bcf:citekey order="17" intorder="1">geeksforgeeks2023</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">ieee80211</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">ms_ibss_2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

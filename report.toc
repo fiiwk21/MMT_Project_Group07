@@ -2,7 +2,7 @@
 \contentsline {section}{1. THÔNG TIN NHÓM}{4}{Doc-Start}%
 \contentsline {section}{2. Cơ sở lý thuyết về mạng WLAN}{5}{table.caption.1}%
 \contentsline {subsection}{2.1 Khái niệm}{5}{table.caption.1}%
-\contentsline {subsection}{2.2 Các thành phần của mạng WLAN \blx@tocontentsinit {0}\cite {kurose2017}}{5}{table.caption.1}%
+\contentsline {subsection}{2.2 Các thành phần của mạng WLAN\blx@tocontentsinit {0}\cite {kurose2017}}{5}{table.caption.1}%
 \contentsline {subsection}{2.3 Mô hình triển khai và Giải pháp kết nối}{6}{table.caption.1}%
 \contentsline {subsubsection}{2.3.1 Mô hình Infrastructure (Có Access Point/Router trung tâm)\blx@tocontentsinit {0}\cite {kurose2017}}{6}{table.caption.1}%
 \contentsline {subsubsection}{2.3.2 Mô hình Ad-hoc (Mạng ngang hàng)\blx@tocontentsinit {0}\cite {kurose2017}}{7}{table.caption.1}%
@@ -12,14 +12,14 @@
 \contentsline {subsection}{3.2 Đăng nhập trang quản trị và thiết lập SSID}{12}{figure.caption.4}%
 \contentsline {subsection}{3.3 Cấu hình thiết bị đầu cuối}{13}{figure.caption.12}%
 \contentsline {subsubsection}{3.3.1 Kết nối bằng Laptop/PC}{13}{figure.caption.12}%
-\contentsline {subsubsection}{3.3.2 Kết nối bằng Smartphone}{15}{figure.caption.20}%
-\contentsline {subsection}{3.4 Triển khai mạng và giải pháp sử dụng máy ảo VMware}{19}{figure.caption.30}%
-\contentsline {subsubsection}{3.4.1 Tổng quan về kiến trúc mạng Ad-hoc}{19}{figure.caption.30}%
-\contentsline {subsubsection}{3.4.2 Vấn đề thực tế trên máy vật lý (Host)}{19}{figure.caption.30}%
-\contentsline {subsubsection}{3.4.3 Giải pháp kết nối giữa Máy thật (Host) và Máy ảo (VM)}{20}{figure.caption.31}%
-\contentsline {subsubsection}{3.4.4 Thực nghiệm kết nối và chia sẻ dữ liệu hai chiều thành công}{21}{figure.caption.32}%
-\contentsline {section}{4. Minh chứng Video Demo}{26}{figure.caption.34}%
-\contentsline {subsection}{4.1 Link Video}{26}{figure.caption.34}%
-\contentsline {subsection}{4.2 Xác nhận hợp lệ}{26}{figure.caption.34}%
-\contentsline {subsection}{4.3 Checklist video}{26}{figure.caption.35}%
-\contentsline {section}{5. Lời Cảm Ơn \& Kết Luận}{27}{figure.caption.35}%
+\contentsline {subsubsection}{3.3.2 Kết nối bằng Smartphone}{17}{figure.caption.22}%
+\contentsline {subsection}{3.4 Triển khai mạng và giải pháp sử dụng máy ảo VMware}{21}{figure.caption.32}%
+\contentsline {subsubsection}{3.4.1 Tổng quan về kiến trúc mạng Ad-hoc}{21}{figure.caption.32}%
+\contentsline {subsubsection}{3.4.2 Vấn đề thực tế trên máy vật lý (Host)}{21}{figure.caption.32}%
+\contentsline {subsubsection}{3.4.3 Giải pháp kết nối giữa Máy thật (Host) và Máy ảo (VM)}{22}{figure.caption.33}%
+\contentsline {subsubsection}{3.4.4 Thực nghiệm kết nối và chia sẻ dữ liệu hai chiều thành công}{23}{figure.caption.34}%
+\contentsline {section}{4. Minh chứng Video Demo}{28}{figure.caption.36}%
+\contentsline {subsection}{4.1 Link Video}{28}{figure.caption.36}%
+\contentsline {subsection}{4.2 Xác nhận hợp lệ}{28}{figure.caption.36}%
+\contentsline {subsection}{4.3 Checklist video}{28}{figure.caption.37}%
+\contentsline {section}{5. Lời Cảm Ơn \& Kết Luận}{29}{figure.caption.37}%

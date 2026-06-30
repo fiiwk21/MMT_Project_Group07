@@ -125,6 +125,29 @@
       \field{title}{Difference between Infrastructure and Infrastructure-less Network}
       \field{year}{2023}
     \endentry
+    \entry{ms_ibss_2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b9a8b868588ad4bc6b36c29936e26423}{%
+           family={{Microsoft Corporation}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{fullhash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{fullhashraw}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{bibnamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorbibnamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authornamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorfullhash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorfullhashraw}{b9a8b868588ad4bc6b36c29936e26423}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\textit{Microsoft Learn Documentation}}
+      \field{note}{[Online]. Available: \url{https://learn.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-wireless-lan-architecture}}
+      \field{title}{Native 802.11 Wireless LAN Architecture - Deprecation of IBSS}
+      \field{year}{2021}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
