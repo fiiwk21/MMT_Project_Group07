@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.15)  1 JUL 2026 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.15)  1 JUL 2026 20:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1403,7 +1403,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cite' on input line 99.
+(hyperref)                removing `\cite' on input line 102.
 
 [7] [8]) [9] (content/config-implementation.tex
 <image/ipconfig.png, id=174, 664.28175pt x 446.8695pt>
@@ -1559,21 +1559,18 @@ Package pdftex.def Info: image/ping_success2.png  used on input line 451.
 File: image/file_sharing_success.png Graphic file (type png)
 <use image/file_sharing_success.png>
 Package pdftex.def Info: image/file_sharing_success.png  used on input line 466.
-(pdftex.def)             Requested size: 386.96027pt x 319.10985pt.
+(pdftex.def)             Requested size: 295.90588pt x 244.02324pt.
 <image/file_sharing_success2.png, id=297, 616.3025pt x 427.5975pt>
 File: image/file_sharing_success2.png Graphic file (type png)
 <use image/file_sharing_success2.png>
 Package pdftex.def Info: image/file_sharing_success2.png  used on input line 467.
-(pdftex.def)             Requested size: 386.96027pt x 268.48093pt.
+(pdftex.def)             Requested size: 295.90588pt x 205.30318pt.
 <image/file_sharing_success3.png, id=298, 653.94313pt x 490.83376pt>
 File: image/file_sharing_success3.png Graphic file (type png)
 <use image/file_sharing_success3.png>
 Package pdftex.def Info: image/file_sharing_success3.png  used on input line 468.
-(pdftex.def)             Requested size: 386.96027pt x 290.4432pt.
- [25]
-Overfull \vbox (173.73726pt too high) has occurred while \output is active []
-
- [26 <./image/file_sharing_success.png> <./image/file_sharing_success2.png> <./image/file_sharing_success3.png>]) [27] (content/video-demo-proof.tex
+(pdftex.def)             Requested size: 295.90588pt x 222.09393pt.
+ [25] [26 <./image/file_sharing_success.png> <./image/file_sharing_success2.png> <./image/file_sharing_success3.png>]) [27] (content/video-demo-proof.tex
 <image/video_proof.png, id=315, 903.97725pt x 529.98pt>
 File: image/video_proof.png Graphic file (type png)
 <use image/video_proof.png>
@@ -1659,7 +1656,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  106i,10n,123p,1249b,1308s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Dell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/miktex/fonts/type1/vntex/vnr/vnbx12.pfb><D:/miktex/fonts/type1/vntex/vnr/vncsc10.pfb><D:/miktex/fonts/type1/vntex/vnr/vnr12.pfb><D:/miktex/fonts/type1/vntex/vnr/vnti12.pfb><D:/miktex/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on report.pdf (31 pages, 9476293 bytes).
+Output written on report.pdf (31 pages, 9476663 bytes).
 PDF statistics:
  475 PDF objects out of 1000 (max. 8388607)
  76 named destinations out of 1000 (max. 500000)
