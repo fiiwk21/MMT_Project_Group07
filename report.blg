@@ -1,29 +1,14 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'report.blg'
-<<<<<<< HEAD
-[363] biber-MSWIN64:342> INFO - === 
-[517] Biber.pm:421> INFO - Reading 'report.bcf'
-[655] Biber.pm:1002> INFO - Found 4 citekeys in bib section 0
-[691] Biber.pm:4487> INFO - Processing section 0
-[730] Biber.pm:4678> INFO - Looking for bibtex file 'content/references.bib' for section 0
-[793] bibtex.pm:1713> INFO - LaTeX decoding ...
-[818] bibtex.pm:1519> INFO - Found BibTeX data source 'content/references.bib'
-[978] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[978] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
-[979] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'vi-VN'
-[982] bbl.pm:676> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[985] bbl.pm:779> INFO - Output to report.bbl
-=======
-[83] biber-MSWIN64:342> INFO - === 
+[79] biber-MSWIN64:342> INFO - === 
 [113] Biber.pm:421> INFO - Reading 'report.bcf'
-[196] Biber.pm:1002> INFO - Found 6 citekeys in bib section 0
-[207] Biber.pm:4487> INFO - Processing section 0
-[215] Biber.pm:4678> INFO - Looking for bibtex file 'content/references.bib' for section 0
-[263] bibtex.pm:1713> INFO - LaTeX decoding ...
-[271] bibtex.pm:1519> INFO - Found BibTeX data source 'content/references.bib'
-[321] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[321] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
-[321] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'vi-VN'
-[323] bbl.pm:676> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[325] bbl.pm:779> INFO - Output to report.bbl
->>>>>>> 2962a1e82a6510821bda0f09f722755f3fd93fb4
+[198] Biber.pm:1002> INFO - Found 6 citekeys in bib section 0
+[209] Biber.pm:4487> INFO - Processing section 0
+[217] Biber.pm:4678> INFO - Looking for bibtex file 'content/references.bib' for section 0
+[271] bibtex.pm:1713> INFO - LaTeX decoding ...
+[279] bibtex.pm:1519> INFO - Found BibTeX data source 'content/references.bib'
+[328] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[328] UCollate.pm:68> INFO - Overriding locale 'vi-VN' defaults 'variable = shifted' with 'variable = non-ignorable'
+[328] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'vi-VN'
+[331] bbl.pm:676> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[333] bbl.pm:779> INFO - Output to report.bbl
