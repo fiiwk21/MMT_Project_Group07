@@ -2380,6 +2380,7 @@
     <bcf:citekey order="7" intorder="1">geeksforgeeks2023</bcf:citekey>
     <bcf:citekey order="8" intorder="1">geeksforgeeks2023</bcf:citekey>
     <bcf:citekey order="9" intorder="1">kurose2017</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">gfg_network_devices</bcf:citekey>
     <bcf:citekey order="10" intorder="1">kurose2017</bcf:citekey>
     <bcf:citekey order="11" intorder="1">ieee80211</bcf:citekey>
     <bcf:citekey order="12" intorder="1">geeksforgeeks2023</bcf:citekey>
@@ -2388,6 +2389,8 @@
     <bcf:citekey order="15" intorder="1">ieee80211</bcf:citekey>
     <bcf:citekey order="16" intorder="1">geeksforgeeks2023</bcf:citekey>
     <bcf:citekey order="17" intorder="1">geeksforgeeks2023</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">ieee80211</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">ms_ibss_2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

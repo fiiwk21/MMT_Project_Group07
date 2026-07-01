@@ -124,14 +124,67 @@
       \strng{authornamehash}{f1e069787ece74531d112559945c6871}
       \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
       \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+<<<<<<< HEAD
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+=======
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+>>>>>>> 2962a1e82a6510821bda0f09f722755f3fd93fb4
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{GeeksforGeeks Portal}
       \field{note}{[Online]. Available: \url{https://www.geeksforgeeks.org/difference-between-infrastructure-and-infrastructure-less-network/}}
       \field{title}{Difference between Infrastructure and Infrastructure-less Network}
       \field{year}{2023}
+    \endentry
+    \entry{gfg_network_devices}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\textit{GeeksforGeeks}}
+      \field{note}{[Trực tuyến]. Available: \url{https://www.geeksforgeeks.org/computer-networks/network-devices-hub-repeater-bridge-switch-router-gateways/}}
+      \field{title}{Network Devices (Hub, Repeater, Bridge, Switch, Router, Gateways and Brouter)}
+      \field{year}{2024}
+    \endentry
+    \entry{ms_ibss_2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b9a8b868588ad4bc6b36c29936e26423}{%
+           family={{Microsoft Corporation}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{fullhash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{fullhashraw}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{bibnamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorbibnamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authornamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorfullhash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorfullhashraw}{b9a8b868588ad4bc6b36c29936e26423}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\textit{Microsoft Learn Documentation}}
+      \field{note}{[Online]. Available: \url{https://learn.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-wireless-lan-architecture}}
+      \field{title}{Native 802.11 Wireless LAN Architecture - Deprecation of IBSS}
+      \field{year}{2021}
     \endentry
   \enddatalist
 \endrefsection
